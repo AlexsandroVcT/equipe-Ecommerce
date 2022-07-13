@@ -1,0 +1,66 @@
+{
+  "name": "testando",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/data-grid": "^4.0.0-alpha.37",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.60",
+    "@material-ui/styles": "^4.11.4",
+    "@material-ui/system": "^4.12.1",
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.1",
+    "@testing-library/user-event": "^12.2.2",
+    "aos": "^2.3.4",
+    "axios": "^0.24.0",
+    "date-fns": "^2.26.0",
+    "formik": "^2.2.9",
+    "framer-motion": "^6.3.3",
+    "lodash": "^4.17.21",
+    "react": "^17.0.1",
+    "react-circular-progressbar": "^2.0.4",
+    "react-dom": "^17.0.1",
+    "react-draggable": "^4.4.4",
+    "react-dropzone": "^11.4.2",
+    "react-icons": "^4.3.1",
+    "react-lazy-load-image-component": "^1.5.4",
+    "react-markdown": "^7.1.0",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^6.0.2",
+    "react-scripts": "4.0.0",
+    "react-scroll": "^1.8.7",
+    "react-slick": "^0.28.1",
+    "redux": "^4.1.2",
+    "remark-gfm": "^3.0.1",
+    "slick-carousel": "^1.8.1",
+    "socket.io-client": "^4.5.1",
+    "styled-components": "^5.3.3",
+    "web-vitals": "^0.2.4",
+    "yup": "^0.32.11"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
