@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!------ LINK CSS STYLE ------->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- LINK CSS STYLE CARRINHO -->
+  <link rel="stylesheet" href="assets/css/styleCarrinho.css">
+  <!------ LINK FONTAWESOME ------->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!----- LINK SLICK JS ------>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+  <!--icon Dark-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css" />
+  <!-- SCRIPT JIVOCHAT -->
+  <script src="//code.jivosite.com/widget/1YD6UYyWt8" async></script>->
+  <!-- <---- SCRIPT - FEATHERICONS ----- -->
+  <script src="https://unpkg.com/feather-icons">
+  </script>
+  <!------ SCRIPT INDEX JS ------->
+  <script src="assets/js/index.js" defer></script>
+
+  <title>E-Ecommerce - Home</title>
+
+</head>
+
+<body>
+
+  <!------ MENU ------->
+
+  <header>
+
+    <nav class="menu">
+
+      <div style="justify-content: left;">
+        <h1><b>E</b>-Ecommerce</h1>
+      </div>
+
+      <ul>
+        <li id="active-link-menu">Home</li>
+        <li>Produtos</li>
+        <li>Sobre-nós</li>
+        <li>Contatos</li>
+      </ul>
+      <div>
+
+
+        <!---- SCROLL ABRE FECHA CARRINHO ---->
+        <div class="config">
+          <a><i class="fas fa-shopping-bag" id="cart-btn"></i>
+
+            <!-- <div class="total-items-in-cart"> -->
+            <p id="cont-itens-carrinho"></p>
+            <!-- </div> -->
+          </a>
+
+        </div>
+
+        <!-- SISTEMA DE CARRINHO -->
+        <div class="cardCarrinho-container" id="meuCarrinho">
+
+          <section class="box-cart">
+
+            <section class="description">
+              <div class="produtos" style="width: 45%;">
+                <p>Produtos</p>
+              </div>
+              <div style="width: 30%;">
+                <p>Quantidade</p>
+              </div>
+              <div style="width: 20%;">
+                <p>Preço</p>
+              </div>
+            </section>
+
+            <div class="cart-item">
+
+            </div>
+
+            <span id="totalFinal" class="total">
+              <h2> Nenhum item escolhido </h2>
+            </span>
+          </section>
+
+
+          <!-- <section class="box-payment">
+            <form class="form-payment" action="">
+              <h2>Detalhes do pagamento</h2>
+              <h6>Selecione seu cartão</h6>
+              <li class="list-cards">
+                <div>
+                  <img src="/assets/img/cards/visa.png" alt="">
+                </div>
+                <div>
+                  <img src="/assets/img/cards/banbob.jfif" alt="">
+                </div>
+                <div>
+                  <img src="/assets/img/cards/visa.png" alt="">
+                </div>
+              </li>
+              <h6>Número do cartão</h6>
+              <input required placeholder="******" type="password" name="" id="">
+              <li class="list-date-cvv-card">
+                <div class="expire">
+                  <label for="expire">Data de expiração</label>
+                  <input required placeholder="data" type="text" name="" id="expire">
+                </div>
+                <div class="cvv">
+                  <label for="cvv">CVV</label>
+                  <input required placeholder="xxx" type="text" name="" id="cvv">
+                </div>
+              </li>
+              <button class="btn-all">Pagar agora</button>
+            </form>
+          </section>-->
+
+
+        </div>
+
+        <!-- ALEX TEVE QUE REMOVER  -->
+
+        <!-- <div class="config">
+          <button type="button" onclick="Mudarestado('openBag')">
+            <a><i class="fas fa-shopping-bag"></i></a>
+          </button>
+        </div>
+        <div id="openBag">
+          <section class="btn-bag-open">
+            <header>
+            </header>
+          </section>
+        </div> -->
+
+        <span id="user-email">
+        </span>
+        <!---- OPEN CONFIG ---->
+
+        <div style="width: 18%;" class="config">
+          <button type="button" onclick="Mudarestado('openConfig')">
+            <a><i class="fas fa-cog"></i></a>
+          </button>
+        </div>
+
+
+        <div id="openConfig" class="btn-config">
+
+          <ul id="ul-OpenConfig">
+
+            <li>
+              <p>Minha Conta</p>
+            </li>
+
+            <li>
+              <p>Pagamentos</p>
+            </li>
+
+            <li>
+              <p>Direitos</p>
+            </li>
+
+            <div>
+              <input type="checkbox" name="chenge-theme" id="chenge-theme" />
+              <label for="chenge-theme">
+
+                <li id="btn-theme">
+                  <p>Tema</p>
+                  <i class="bi bi-sun">
+                    <p>Light</p>
+                  </i>
+                  <i class="bi bi-moon">
+                    <p>Dark</p>
+                  </i>
+                </li>
+
+              </label>
+            </div>
+
+            <li>
+              <p>Feedbacks</p>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+  <!------ BANNER INICIAL ------->
+
+  <main class="banner-initial">
+    <figure>
+      <div class="search-banner">
+
+        <h4>
+          Receba o melhor produto em sua casa
+        </h4>
+
+        <div>
+          <input type="search" placeholder="Search your favorite product ...">
+          <i class="fas fa-search"></i>
+        </div>
+
+        <div class="frete">
+          <p>Frete Grátis em compras acima de <b>R$ 129,99</b></p>
+        </div>
+      </div>
+
+    </figure>
+  </main>
+
+  <!-- CATEGORIAS -->
+
+  <section class="categories">
+
+    <div class="titles-page">
+      <h5>Navegue entre as categorias</h5>
+    </div>
+
+    <div class="scrolling-wrapper">
+
+      <div class="box">
+        <div>
+          <i class="fa-solid fa-shirt"></i>
+        </div>
+        <p>Moda</p>
+      </div>
+
+      <div class="box">
+        <div>
+          <i class="fa-solid fa-volleyball"></i>
+        </div>
+        <p>Esportes</p>
+      </div>
+
+      <div class="box">
+        <div>
+          <i class="fa-solid fa-mug-saucer"></i>
+        </div>
+        <p>Casa</p>
+      </div>
+
+      <div class="box">
+        <div>
+          <i class="fa-solid fa-headphones-simple"></i>
+        </div>
+        <p>Eletrônicos</p>
+      </div>
+
+      <div class="box">
+        <div>
+          <i class="fa-solid fa-chair"></i>
+        </div>
+        <p>Móveis</p>
+      </div>
+
+      <div class="box">
+        <div>
+          <i class="fa-solid fa-dog"></i>
+        </div>
+        <p>Pets</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!------ CATALOGUE ------->
+
+  <section class="catalogue-initial">
+
+    <div class="titles-page">
+      <h5>CATALOGUE</h5>
+    </div>
+
+    <ul class="box-catalogue">
+
+      <li>
+        <figure>
+          <img src="assets/img/projects/iphone.png" alt="HeadPhone">
+        </figure>
+        <figcaption>
+          <div>
+            <h1>Apple iPhone 11</h1>
+            <h4>R$ 3.319,99</h4>
+          </div>
+
+          <section>
+            <i data-produtoid="0" class="fas fa-shopping-cart"></i>
+            <i class="fas fa-heart"></i>
+            </div>
+          </section>
+        </figcaption>
+      </li>
+
+      <li>
+        <figure>
+          <img src="assets/img/projects/console.png" alt="HeadPhone">
+        </figure>
+        <figcaption>
+          <div>
+            <h1>Controle Xbox</h1>
+            <h4>R$ 290,00</h4>
+          </div>
+
+          <section>
+            <i data-produtoid="1" class="fas fa-shopping-cart"></i>
+            <i class="fas fa-heart"></i>
+            </div>
+          </section>
+        </figcaption>
+      </li>
+
+      <li>
+        <figure>
+          <img src="assets/img/projects/headphone1.png" alt="HeadPhone">
+        </figure>
+        <figcaption>
+          <div>
+            <h1>Headset Gamer</h1>
+            <h4>R$ 349,99</h4>
+          </div>
+
+          <section>
+            <i data-produtoid="2" class="fas fa-shopping-cart"></i>
+            <i class="fas fa-heart"></i>
+            </div>
+          </section>
+        </figcaption>
+      </li>
+
+      <li>
+        <figure>
+          <img src="assets/img/projects/nike-jordan.png" alt="HeadPhone">
+        </figure>
+        <figcaption>
+          <div>
+            <h1>Air Jordan</h1>
+            <h4>R$ 329,99</h4>
+          </div>
+
+          <section>
+            <i data-produtoid="3" class="fas fa-shopping-cart"></i>
+            <i class="fas fa-heart"></i>
+            </div>
+          </section>
+        </figcaption>
+      </li>
+
+      <li>
+        <figure>
+          <img src="assets/img/projects/relógio.png" alt="HeadPhone">
+        </figure>
+        <figcaption>
+          <div>
+            <h1>Xiaomi Mi Band</h1>
+            <h4>R$ 169,99</h4>
+          </div>
+
+          <section>
+            <i data-produtoid="4" class="fas fa-shopping-cart"></i>
+            <i class="fas fa-heart"></i>
+            </div>
+          </section>
+        </figcaption>
+      </li>
+
+
+      <li>
+        <figure>
+          <img src="assets/img/projects/whey.png" alt="HeadPhone">
+        </figure>
+        <figcaption>
+          <div>
+            <h1>Nutriwhey</h1>
+            <h4>R$ 48,49</h4>
+          </div>
+
+          <section>
+            <i data-produtoid="5" class="fas fa-shopping-cart"></i>
+            <i class="fas fa-heart"></i>
+            </div>
+          </section>
+        </figcaption>
+      </li>
+
+      <li>
+        <figure>
+          <img src="assets/img/projects/tenis-masc.png" alt="HeadPhone">
+        </figure>
+        <figcaption>
+          <div>
+            <h1>Slant Summer</h1>
+            <h4>R$ 131,19</h4>
+          </div>
+
+          <section>
+            <i data-produtoid="6" class="fas fa-shopping-cart"></i>
+            <i class="fas fa-heart"></i>
+            </div>
+          </section>
+        </figcaption>
+      </li>
+
+      <li>
+        <figure>
+          <img src="assets/img/projects/Philco-Tv.png" alt="HeadPhone">
+        </figure>
+        <figcaption>
+          <div>
+            <h1>Philco Smart TV</h1>
+            <h4>R$ 1.399,00</h4>
+          </div>
+
+          <section>
+            <i data-produtoid="7" class="fas fa-shopping-cart"></i>
+            <i class="fas fa-heart"></i>
+            </div>
+          </section>
+        </figcaption>
+      </li>
+
+    </ul>
+
+  </section>
+
+  <!------ TIPOS DE PAGAMENTOS ------->
+
+  <section class="payments">
+    <div>
+
+      <section>
+        <h1>Melhor forma de pagar</h1>
+        <p>Fácil, prático e divertido</p>
+      </section>
+
+      <ul>
+        <li>
+          <i class="far fa-credit-card"></i>
+          <section>
+            <h3>Cartão</h3>
+            <p>Em até 12x sem juros</p>
+          </section>
+        </li>
+
+        <li>
+          <i class="far fa-credit-card"></i>
+          <section>
+            <h3>Boleto</h3>
+            <p>Escaneie na hora</p>
+          </section>
+        </li>
+
+        <li>
+          <i class="far fa-credit-card"></i>
+          <section>
+            <h3>Via Pix</h3>
+            <p>000.000.000-00</p>
+          </section>
+        </li>
+      </ul>
+
+    </div>
+
+  </section>
+
+  <!------ PRODUCTS RECENTS ------->
+
+  <section class="products">
+
+    <div class="titles-page">
+      <h5>Ofertas do dia</h5>
+    </div>
+
+    <article class="box-products">
+
+      <section class="carrossel carrone">
+
+        <li>
+          <figure>
+            <img src="assets/img/projects/iphone.png" alt="HeadPhone">
+          </figure>
+          <figcaption>
+            <div>
+              <h1>Apple iPhone 11</h1>
+              <h4>R$ 3.319,99</h4>
+            </div>
+            <section>
+              <i data-produtoid="0" class="fas fa-shopping-cart"></i>
+              <i class="fas fa-heart"></i>
+              </div>
+            </section>
+          </figcaption>
+        </li>
+
+        <li>
+          <figure>
+            <img src="assets/img/projects/console.png" alt="HeadPhone">
+          </figure>
+          <figcaption>
+            <div>
+              <h1>Controle Xbox</h1>
+              <h4>R$ 290,00</h4>
+            </div>
+            <section>
+              <i data-produtoid="1" class="fas fa-shopping-cart"></i>
+              <i class="fas fa-heart"></i>
+              </div>
+            </section>
+          </figcaption>
+        </li>
+
+        <li>
+          <figure>
+            <img src="assets/img/projects/headphone1.png" alt="HeadPhone">
+          </figure>
+          <figcaption>
+            <div>
+              <h1>Headset Gamer</h1>
+              <h4>R$ 349,99</h4>
+            </div>
+            <section>
+              <i data-produtoid="2" class="fas fa-shopping-cart"></i>
+              <i class="fas fa-heart"></i>
+              </div>
+            </section>
+          </figcaption>
+        </li>
+
+        <li>
+          <figure>
+            <img src="assets/img/projects/nike-jordan.png" alt="HeadPhone">
+          </figure>
+          <figcaption>
+            <div>
+              <h1>Air Jordan</h1>
+              <h4>R$ 329,99</h4>
+            </div>
+            <section>
+              <i data-produtoid="3" class="fas fa-shopping-cart"></i>
+              <i class="fas fa-heart"></i>
+              </div>
+            </section>
+          </figcaption>
+        </li>
+
+        <li>
+          <figure>
+            <img src="assets/img/projects/relógio.png" alt="HeadPhone">
+          </figure>
+          <figcaption>
+            <div>
+              <h1>Xiaomi Mi Band</h1>
+              <h4>R$ 169,99</h4>
+            </div>
+            <section>
+              <i data-produtoid="4" class="fas fa-shopping-cart"></i>
+              <i class="fas fa-heart"></i>
+              </div>
+            </section>
+          </figcaption>
+        </li>
+
+
+        <li>
+          <figure>
+            <img src="assets/img/projects/whey.png" alt="HeadPhone">
+          </figure>
+          <figcaption>
+            <div>
+              <h1>Nutriwhey</h1>
+              <h4>R$ 48,49</h4>
+            </div>
+            <section>
+              <i data-produtoid="5" class="fas fa-shopping-cart"></i>
+              <i class="fas fa-heart"></i>
+              </div>
+            </section>
+          </figcaption>
+        </li>
+
+        <li>
+          <figure>
+            <img src="assets/img/projects/tenis-masc.png" alt="HeadPhone">
+          </figure>
+          <figcaption>
+            <div>
+              <h1>Slant Summer</h1>
+              <h4>R$ 131,19</h4>
+            </div>
+            <section>
+              <i data-produtoid="6" class="fas fa-shopping-cart"></i>
+              <i class="fas fa-heart"></i>
+              </div>
+            </section>
+          </figcaption>
+        </li>
+
+        <li>
+          <figure>
+            <img src="assets/img/projects/Philco-Tv.png" alt="HeadPhone">
+          </figure>
+          <figcaption>
+            <div>
+              <h1>Philco Smart TV</h1>
+              <h4>R$ 1.399,00</h4>
+            </div>
+            <section>
+              <i data-produtoid="7" class="fas fa-shopping-cart"></i>
+              <i class="fas fa-heart"></i>
+              </div>
+            </section>
+          </figcaption>
+        </li>
+
+      </section>
+
+      <div id="btn-carr" class="buttons-arrows">
+        <button class="slick-prev-one">
+          <i class="fa-solid fa-angle-left"></i>
+        </button>
+
+        <button class="slick-next-one">
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+
+    </article>
+
+  </section>
+
+  <!------ CONTACT NOS ------->
+
+  <section class="payments pay-contact">
+    <div>
+
+      <section>
+        <h1>Encontrou seu produto?</h1>
+        <p>Se não, entre já em contato conosco</p>
+      </section>
+
+      <button class="btn-all">
+        Contato
+      </button>
+
+    </div>
+  </section>
+
+  <!------ PRODUCTS RECENTS ------->
+
+  <section class="products">
+
+    <div class="titles-page">
+      <h5>Outros Produtos</h5>
+    </div>
+
+    <article class="box-products">
+
+      <section class="carrossel carrtwo">
+
+        <li>
+          <figure>
+            <img src="assets/img/projects/iphone.png" alt="HeadPhone">
+          </figure>
+          <figcaption>
+            <div>
+              <h1>Apple iPhone 11</h1>
+              <h4>R$ 3.319,99</h4>
+            </div>
+            <section>
+              <i data-produtoid="0" class="fas fa-shopping-cart"></i>
+              <i class="fas fa-heart"></i>
+              </div>
+            </section>
+          </figcaption>
+        </li>
+
+        <li>
+          <figure>
+            <img src="assets/img/projects/console.png" alt="HeadPhone">
+          </figure>
+          <figcaption>
+            <div>
+              <h1>Controle Xbox</h1>
+              <h4>R$ 290,00</h4>
+            </div>
+            <section>
+              <i data-produtoid="1" class="fas fa-shopping-cart"></i>
+              <i class="fas fa-heart"></i>
+              </div>
+            </section>
+          </figcaption>
+        </li>
+
+        <li>
+          <figure>
+            <img src="assets/img/projects/headphone1.png" alt="HeadPhone">
+          </figure>
+          <figcaption>
+            <div>
+              <h1>Headset Gamer</h1>
+              <h4>R$ 349,99</h4>
+            </div>
+            <section>
+              <i data-produtoid="2" class="fas fa-shopping-cart"></i>
+              <i class="fas fa-heart"></i>
+              </div>
+            </section>
+          </figcaption>
+        </li>
+
+        <li>
+          <figure>
+            <img src="assets/img/projects/nike-jordan.png" alt="HeadPhone">
+          </figure>
+          <figcaption>
+            <div>
+              <h1>Air Jordan</h1>
+              <h4>R$ 329,99</h4>
+            </div>
+            <section>
+              <i data-produtoid="3" class="fas fa-shopping-cart"></i>
+              <i class="fas fa-heart"></i>
+              </div>
+            </section>
+          </figcaption>
+        </li>
+
+        <li>
+          <figure>
+            <img src="assets/img/projects/relógio.png" alt="HeadPhone">
+          </figure>
+          <figcaption>
+            <div>
+              <h1>Xiaomi Mi Band</h1>
+              <h4>R$ 169,99</h4>
+            </div>
+            <section>
+              <i data-produtoid="4" class="fas fa-shopping-cart"></i>
+              <i class="fas fa-heart"></i>
+              </div>
+            </section>
+          </figcaption>
+        </li>
+
+
+        <li>
+          <figure>
+            <img src="assets/img/projects/whey.png" alt="HeadPhone">
+          </figure>
+          <figcaption>
+            <div>
+              <h1>Nutriwhey</h1>
+              <h4>R$ 48,49</h4>
+            </div>
+            <section>
+              <i data-produtoid="5" class="fas fa-shopping-cart"></i>
+              <i class="fas fa-heart"></i>
+              </div>
+            </section>
+          </figcaption>
+        </li>
+
+        <li>
+          <figure>
+            <img src="assets/img/projects/tenis-masc.png" alt="HeadPhone">
+          </figure>
+          <figcaption>
+            <div>
+              <h1>Slant Summer</h1>
+              <h4>R$ 131,19</h4>
+            </div>
+            <section>
+              <i data-produtoid="6" class="fas fa-shopping-cart"></i>
+              <i class="fas fa-heart"></i>
+              </div>
+            </section>
+          </figcaption>
+        </li>
+
+        <li>
+          <figure>
+            <img src="assets/img/projects/Philco-Tv.png" alt="HeadPhone">
+          </figure>
+          <figcaption>
+            <div>
+              <h1>Philco Smart TV</h1>
+              <h4>R$ 1.399,00</h4>
+            </div>
+            <section>
+              <i data-produtoid="7" class="fas fa-shopping-cart"></i>
+              <i class="fas fa-heart"></i>
+              </div>
+            </section>
+          </figcaption>
+        </li>
+
+      </section>
+
+      <div id="btn-carr" class="buttons-arrows">
+        <button class="slick-prev-two">
+          <i class="fa-solid fa-angle-left"></i>
+        </button>
+
+        <button class="slick-next-two">
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+      </div>
+
+    </article>
+
+  </section>
+
+  <!-------------- SEE ALL ---------------->
+
+  <section class="see-all">
+    <div class="see-all-left">
+      <h5>Último sapato elegante</h5>
+      <p>Sapato masculino da coleção 2022</p>
+
+      <button class="btn-all">
+        Ver todos
+      </button>
+    </div>
+
+    <div class="see-all-image">
+
+    </div>
+  </section>
+
+  <!-------------- FOOTER ---------------->
+
+  <footer>
+    <div class="media">
+
+      <div class="media-title">
+        <a href="">
+          <h2><b>E</b>-Ecommerce</h2>
+        </a>
+      </div>
+
+      <div class="social-media">
+
+        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+
+      </div>
+
+      <section class="copyrigth">
+        <p>© 2022 Dev Project. Todos os direitos reservados.</p>
+        <p>Termos, acordos e Política de Privacidade.</p>
+      </section>
+
+    </div>
+
+    <div class="shop">
+      <h3>Shop</h3>
+      <ul>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Location</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+
+    <div class="links">
+      <h3>Links</h3>
+      <ul>
+        <li><a href="#">Eletronics</a></li>
+        <li><a href="#">Summer</a></li>
+        <li><a href="#">Book</a></li>
+        <li><a href="#">Cosmetics</a></li>
+        <li><a href="#">Furnitures</a></li>
+      </ul>
+    </div>
+
+    <div class="contact">
+      <h3>Contact</h3>
+      <ul>
+        <li><a href="tel:+551234567890">+55 12 3456 7890</a></li>
+        <li><a href="mailto:e-ecommerce@gmail.com">e-ecommerce@gmail.com</a></li>
+        <li><a href="#">Rua Principal, 123. Cidade - ET</a></li>
+      </ul>
+    </div>
+
+  </footer>
+
+  <!-------------- SCRIPT SLICK JS ------------------->
+  <script src="assets/js/scriptCarrinho.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+
+</body>
+
+</html>
