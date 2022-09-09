@@ -312,3 +312,9 @@ const reajustarObjeto = (cart) => {
 
   localStorage.setItem(`conta${idUserLogado}`, JSON.stringify({ e, s, cart }))
 }
+
+const btnFinalizarCompras = document.querySelector("#btnFinalizarCarrinho")
+
+function finalizandoCompras() {
+  alert("Sistema de Compras em Desenvolvimento")
+}
