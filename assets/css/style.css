@@ -293,6 +293,31 @@ input[type="checkbox"] {
   box-shadow: 0px 0px 5px 0px var(--third-back-darck);
 }
 
+#iconMSN {
+  width: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes iconMSN {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+#iconMSN {
+  -webkit-animation: iconMSN .90s linear infinite;
+  -moz-animation: iconMSN .90s linear infinite;
+  -ms-animatiom: iconMSN .90s linear infinite;
+  -o-animation: iconMSN .90s linear infinite;
+  animation: iconMSN .90s linear infinite;
+}
+
 /***** RESET PAGE *****/
 * {
 

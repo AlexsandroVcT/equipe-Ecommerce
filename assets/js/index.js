@@ -82,11 +82,13 @@ $('.carrtwo').slick({
 
 $('button').on('click', function () {
   $('#divId').show(); // aparece o div
-  window.open(seulink, '_blank'); // abre nova janela
-});
-/*SISTEMA LIGHT AND DARK */
+  // window.open(seulink, '_blank'); // abre nova janela, esta dando erro
 
+});
+
+/*SISTEMA LIGHT AND DARK */
 const chageThemeBtn = document.querySelector("#chenge-theme");
+
 
 //Toggle dark mode
 function toggleDarkMode() {
@@ -95,7 +97,7 @@ function toggleDarkMode() {
 
 // Load light or dark mode . preferencia do usuario
 function loadTheme() {
-  const darkMode = localStorage.getItem("dark")
+  const darkMode = localStorage.getItem("dark");
 
   if (darkMode) {
     toggleDarkMode();
@@ -106,7 +108,6 @@ loadTheme()
 
 chageThemeBtn.addEventListener("change", function () {
   toggleDarkMode()
-
   //Save or remove dark mode
   localStorage.removeItem("dark");
 
@@ -146,26 +147,33 @@ scrollCart()
 
 //
 
-window.addEventListener('load', () => {
-  let email = localStorage.getItem('userLogado')
+function loginOuCadrasto() {
+  window.addEventListener('load', () => {
+    let email = localStorage.getItem('userLogado')
 
-  document.querySelector('#user-email').innerHTML = email === null
-    ? '<a href="login-page.html"><i class="fa-solid fa-user"></i></a>'
-    : `<p> ${email} </ p>`
+    document.getElementById('user-email').innerHTML = email === null
+      ? '<a href="login-page.html"><i class="fa-solid fa-user"></i></a>'
+      : `<img src="assets/img/login-back/msn2.png" id="iconMSN">
+      `
 
-  document.querySelector('#ul-OpenConfig').innerHTML += email === null
-    ? ''
-    :
-    `
-          <li onclick='sair()'>
-            <p> sair </p>
-          </li>
-        `
 
-})
+    // document.querySelector('#ul-OpenConfig').innerHTML += email === "" //Aqui ta dando conflito com a config dark
+    //   ? ''
+    //   :
+    //   `
+    //   <li onclick='sair()'>
+    //           <p> sair </p>
+    //         </li>
 
+    //       `
+
+  })
+
+
+}
+loginOuCadrasto()
 const sair = () => {
   localStorage.removeItem('userLogado')
-  window.location.href = 'login-page.html'
+  window.location.href = ''
 }
 

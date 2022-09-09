@@ -259,6 +259,31 @@
   color: var(--important-color);
 }
 
+
+#btnFinalizarCarrinho {
+  height: 8%;
+  margin: 10px 0px;
+  border-radius: 20px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 81px;
+  font-size: .7rem;
+  background-color: var(--back-darck);
+  text-transform: uppercase;
+  color: var(--important-color);
+  cursor: pointer;
+}
+
+#btnFinalizarCarrinho h2 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: -1.3rem;
+  color: var(--important-color);
+}
+
 @media all and (max-width: 425px) {
 
   .box-cart {

@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!------ LINK CSS STYLE ------->
     <link rel="stylesheet" href="assets/css/style.css">
     <!------ LINK FONTAWESOME ------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!----- LINK SLICK JS ------>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <!--icon Dark-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css" />
-    
+    <script src="assets/js/cadastro.js" defer></script>
+
+
     <title>E-Ecommerce - Cadastro</title>
 
 </head>
+
 <body style="background-color: var(--secundary-background);">
     <!-- LOGIN PAGE -->
     <section class="login-page">
 
-        <div class="login-container"> 
+        <div class="login-container">
 
             <div class="login-register">
-                
+
                 <section>
                     <h1><b>E</b>-Ecommerce</h1>
 
                     <!-- REGISTRO DE NOVO USURÁIO -->
                     <div class="register" id="reg">
-                        
+
                         <h3>
                             Ja é nosso cliente?
                             <br><br>
@@ -44,7 +48,7 @@
                             <a href=""><i class="fa-brands fa-twitter"></i></a>
                             <a href=""><i class="fa-brands fa-instagram"></i></a>
                             <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                    
+
                         </div>
 
                         <button class="btn-all" onclick="location.href = 'login-page.html'">
@@ -58,7 +62,7 @@
 
 
             <!-- LOGIN -->
-            <form class="login-sign-in">
+            <form class="login-sign-in" id="chenge-theme">
 
                 <section>
                     <h1>Cadastro</h1>
@@ -66,31 +70,35 @@
                     <div class="sign-in">
                         <input id="email" type="email" name="email" class="email" placeholder="E-mail" required>
                         <input id="senha" type="password" name="password" class="password" placeholder="Senha" required>
-                        <input id="rSenha"type="password" name="password" class="password" placeholder="Repetir Senha" required>
+                        <input id="rSenha" type="password" name="password" class="password" placeholder="Repetir Senha"
+                            required>
                     </div>
 
-                    <input style="margin-top: 35px;" type="button" id="register-btn" class="btn-all" value="Cadastrar" />
-                        
+                    <input style="margin-top: 35px;" type="button" id="register-btn" class="btn-all"
+                        value="Cadastrar" />
+
                 </section>
             </form>
 
         </div>
     </section>
-    
+
     <div id="mdl"></div>
 
-      <!-------------- SCRIPT SLICK JS ------------------->
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-------------- SCRIPT SLICK JS ------------------->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
-  <script src="assets/js/cadastro.js"></script>
+    <!------ SCRIPT - FEATHERICONS ------->
+    <!-- <script src="assets/js/index.js" defer></script> -->
 
-  <!------ SCRIPT - FEATHERICONS ------->
-  <script src="assets/js/index.js" defer></script>
+
+
 
 </body>
+
 </html>

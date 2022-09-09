@@ -115,8 +115,8 @@ document.querySelector('body').addEventListener('click', ({
       const produto = new Product(id)
 
       let cart = {} //cria o carrinho
-      console.log(idUserLogado)
-      console.log(JSON.parse(localStorage.getItem(`conta${idUserLogado}`)))
+      // console.log(idUserLogado)
+      // console.log(JSON.parse(localStorage.getItem(`conta${idUserLogado}`)))
       if (Object.entries(JSON.parse(localStorage.getItem(`conta${idUserLogado}`))['cart']).length === 0) {
         console.log('passou primeira vez')
         cart[id] = produto // se o carrinho for nulo, ele gera um carrinho novo
