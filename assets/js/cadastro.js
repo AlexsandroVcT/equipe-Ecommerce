@@ -95,7 +95,6 @@ document.querySelector('#register-btn').addEventListener('click', () => {
 
             })
             setTimeout(function () {
-                window.close()
                 window.location.href = 'login-page.html'
 
             }, 2000)
