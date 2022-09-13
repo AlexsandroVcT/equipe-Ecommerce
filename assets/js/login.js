@@ -31,7 +31,6 @@ class Conta {
         localStorage.setItem('userLogado', email)
 
         setTimeout(function () {
-            window.close()
             window.location.href = 'index.html'
         }, 1500)
 
