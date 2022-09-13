@@ -127,11 +127,9 @@ document.querySelector('body').addEventListener('click', ({
           }
         })
 
-        if (!possui) { // se o produto ja tiver no carrinho, ele n vai adicionar
+        if (!possui) { // se o produto ja tiver no carrinho, ele n vai adicionar, e me mostre um alert- Personalizado
           cart[id] = produto
         } else {
-          // alert('produto ja existente')
-
           Swal.fire({
             title: produto.nome,
             text: 'produto ja foi adicionado no Carrinho',
@@ -271,7 +269,7 @@ const removerQtd = (id, qtd) => {
   setarValores(idUserLogado) // seta os valores atualizados
 }
 
-//adicionar qtd do produto selecionado
+//adicionar qtd do produto selecionado, se atingir maior que 20 - Mostre-me um alert personalizado
 const adicionarQtd = (id, qtd) => {
   let idUserLogado = getIdUser()
   let cart = JSON.parse(localStorage.getItem(`conta${idUserLogado}`)).cart
@@ -330,7 +328,7 @@ const reajustarObjeto = (cart) => {
   localStorage.setItem(`conta${idUserLogado}`, JSON.stringify({ e, s, cart }))
 }
 
-// Sistema de compras em Desenvolvimento
+// Sistema de compras em Desenvolvimento, Com alert Personalizado
 const btnFinalizarCompras = document.querySelector("#btnFinalizarCarrinho")
 btnFinalizarCompras.addEventListener("click", function () {
   Swal.fire({

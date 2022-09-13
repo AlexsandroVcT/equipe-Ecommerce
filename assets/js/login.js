@@ -17,9 +17,8 @@ class Conta {
             }
         }
     }
-
+    // Sistema de verificação com Alert personalizado
     approved(email) {
-        // alert('login aprovado, você sera redirecionado(a) a tela inicial')
         Swal.fire({
             position: 'top-end',
             icon: 'success',
@@ -39,7 +38,6 @@ class Conta {
 
     disapproved() {
         limparInput()
-        // alert('senha e/ou usuarios incorreto(s)')
         Swal.fire({
             icon: 'error',
             title: 'Oops...',

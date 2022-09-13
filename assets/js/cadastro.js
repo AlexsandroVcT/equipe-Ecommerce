@@ -81,7 +81,7 @@ document.querySelector('#register-btn').addEventListener('click', () => {
         if (bd.verifyAccounts(conta)) {
             bd.save(conta)
             limparInputs(3)
-            // alert('conta criada, vá para a aba de login para logar-se')
+            // Alert Personalizado
             Swal.fire({
                 icon: 'success',
                 title: 'conta criada, vá para a aba de login para logar-se',
@@ -99,7 +99,6 @@ document.querySelector('#register-btn').addEventListener('click', () => {
 
             }, 2000)
         } else {
-            // alert('ja existe uma conta com esse email')
             Swal.fire({
                 icon: 'error',
                 title: 'Oops...',
@@ -111,7 +110,6 @@ document.querySelector('#register-btn').addEventListener('click', () => {
         }
 
     } else {
-        // alert('A senha deve possuir no minimo 6 caracteres e as senhas devem ser iguais')
         Swal.fire({
             icon: 'error',
             title: 'Oops...',
