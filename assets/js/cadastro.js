@@ -81,13 +81,46 @@ document.querySelector('#register-btn').addEventListener('click', () => {
         if (bd.verifyAccounts(conta)) {
             bd.save(conta)
             limparInputs(3)
-            alert('conta criada, vá para a aba de login para logar-se')
+            // alert('conta criada, vá para a aba de login para logar-se')
+            Swal.fire({
+                icon: 'success',
+                title: 'conta criada, vá para a aba de login para logar-se',
+                confirmButtonColor: "#DD6B55",
+                showClass: {
+                    popup: 'animate__animated animate__fadeInDown'
+                },
+                hideClass: {
+                    popup: 'animate__animated animate__fadeOutUp'
+                }
+
+            })
+            setTimeout(function () {
+                window.close()
+                window.location.href = 'login-page.html'
+
+            }, 2000)
         } else {
-            alert('ja existe uma conta com esse email')
+            // alert('ja existe uma conta com esse email')
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'ja existe uma conta com esse email',
+                confirmButtonColor: "#DD6B55"
+
+                // footer: '<a href="">Why do I have this issue?</a>'
+            })
         }
 
     } else {
-        alert('A senha deve possuir no minimo 6 caracteres e as senhas devem ser iguais')
+        // alert('A senha deve possuir no minimo 6 caracteres e as senhas devem ser iguais')
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'A senha deve possuir no minimo 6 caracteres e as senhas devem ser iguais',
+            confirmButtonColor: "#DD6B55"
+
+            // footer: '<a href="">Why do I have this issue?</a>'
+        })
         limparInputs(2)
     }
 

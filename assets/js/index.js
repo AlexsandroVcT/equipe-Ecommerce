@@ -120,13 +120,12 @@ chageThemeBtn.addEventListener("change", function () {
 // ABRIR MODAL CONFIGURATIONS
 
 function Mudarestado(el) {
-  var display = document.getElementById(el).style.display;
+  let display = document.getElementById(el).style.display;
   if (display == "none")
     document.getElementById(el).style.display = 'block';
   else
     document.getElementById(el).style.display = 'none';
 }
-
 feather.replace();
 
 //ABRINDO O MENU DO CARRINHO
@@ -154,6 +153,7 @@ function loginOuCadrasto() {
     document.getElementById('user-email').innerHTML = email === null
       ? '<a href="login-page.html"><i class="fa-solid fa-user"></i></a>'
       : `<img src="assets/img/login-back/msn2.png" id="iconMSN">
+      
       `
 
 

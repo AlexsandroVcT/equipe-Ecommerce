@@ -19,14 +19,36 @@ class Conta {
     }
 
     approved(email) {
-        alert('login aprovado, você sera redirecionado(a) a tela inicial')
+        // alert('login aprovado, você sera redirecionado(a) a tela inicial')
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'login aprovado, você sera redirecionado(a) a tela inicial',
+            showConfirmButton: false,
+            timer: 1500,
+            confirmButtonColor: "#DD6B55"
+        })
         localStorage.setItem('userLogado', email)
-        window.location.href = 'index.html'
+
+        setTimeout(function () {
+            window.close()
+            window.location.href = 'index.html'
+        }, 1500)
+
+
     }
 
     disapproved() {
         limparInput()
-        alert('senha e/ou usuarios incorreto(s)')
+        // alert('senha e/ou usuarios incorreto(s)')
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'senha e/ou usuarios incorreto(s)',
+            confirmButtonColor: "#DD6B55"
+
+            // footer: '<a href="">Why do I have this issue?</a>'
+        })
     }
 }
 

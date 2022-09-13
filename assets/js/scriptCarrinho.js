@@ -5,7 +5,7 @@ const products = {
     nome: 'Apple Iphone 11',
     desc: 'Muito Utilizado em tecnologias avançadas..',
     valor: 3320.0,
-    img: '<img src="assets/img/moda/Bucket1.png">',
+    img: '<img src="assets/img/projects/iphone.png">',
     qtd: 1
   },
 
@@ -91,9 +91,6 @@ class Product {
 }
 
 
-
-
-
 ///////////////////////////////////////////////////////CLIQUE///////////////////////////////////////////////////////////
 
 //ao clicar em um dos botoes de compra, gera uma funcao
@@ -115,10 +112,7 @@ document.querySelector('body').addEventListener('click', ({
       const produto = new Product(id)
 
       let cart = {} //cria o carrinho
-      // console.log(idUserLogado)
-      // console.log(JSON.parse(localStorage.getItem(`conta${idUserLogado}`)))
       if (Object.entries(JSON.parse(localStorage.getItem(`conta${idUserLogado}`))['cart']).length === 0) {
-        console.log('passou primeira vez')
         cart[id] = produto // se o carrinho for nulo, ele gera um carrinho novo
 
       } else {
@@ -136,7 +130,14 @@ document.querySelector('body').addEventListener('click', ({
         if (!possui) { // se o produto ja tiver no carrinho, ele n vai adicionar
           cart[id] = produto
         } else {
-          alert('produto ja existente')
+          // alert('produto ja existente')
+
+          Swal.fire({
+            title: produto.nome,
+            text: 'produto ja foi adicionado no Carrinho',
+            confirmButtonColor: "#DD6B55",
+
+          })
         }
 
       }
@@ -281,10 +282,26 @@ const adicionarQtd = (id, qtd) => {
     cart[id].qtd = qtd
 
     reajustarObjeto(cart)
+  } else {
+    Swal.fire({
+      title: 'Você atingiu a quantidade Maxima de produto em 1 objetivo',
+      width: 600,
+      padding: '3em',
+      color: '#E63946',
+      background: '#fff url(/images/trees.png)',
+      backdrop: `
+        rgba(#E63946)
+        url("/images/nyan-cat.gif")
+        left top
+        no-repeat
+      `,
+      confirmButtonColor: "#DD6B55"
+    })
   }
 
   setarValores(idUserLogado) // seta os valores atualizados
 }
+
 
 
 // carregamento da pagina //
@@ -313,8 +330,14 @@ const reajustarObjeto = (cart) => {
   localStorage.setItem(`conta${idUserLogado}`, JSON.stringify({ e, s, cart }))
 }
 
+// Sistema de compras em Desenvolvimento
 const btnFinalizarCompras = document.querySelector("#btnFinalizarCarrinho")
+btnFinalizarCompras.addEventListener("click", function () {
+  Swal.fire({
+    title: 'Me Desculpa?',
+    text: 'Sistema de compras ainda esta em Desenvolvimento!',
+    confirmButtonColor: "#DD6B55",
+    icon: 'question'
+  })
+})
 
-function finalizandoCompras() {
-  alert("Sistema de Compras em Desenvolvimento")
-}
