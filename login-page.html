@@ -8,6 +8,8 @@
 
     <!------ LINK CSS STYLE ------->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!--LINK CSS LOGIN -->
+    <link rel="stylesheet" href="assets/css/login.css">
     <!------ LINK FONTAWESOME ------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
@@ -32,7 +34,7 @@
 
         <div class="login-container">
 
-            <div class="login-register">
+            <div class="login-register" id="img-login-register">
 
                 <section>
                     <h1><b>E</b>-Ecommerce</h1>
@@ -43,7 +45,9 @@
                         <h3>
                             Ainda não é nosso cliente?
                             <br><br>
-                            Cadastre-se agora e receba <b>10% de desconto</b> na sua primeira compra
+                            Cadastre-se agora e receba <b>&nbsp;10% de desconto</b>
+                            <br>
+                            na sua primeira compra
                         </h3>
 
                         <div class="login-medias-socials">
@@ -79,23 +83,27 @@
                         <p>Lembrar senha</p>
                         <input type="checkbox" name="remember-password" id="remember-password">
                     </div> -->
-                    <div>
-                        <p>
-                            <a href="https://www.mozilla.org/pt-BR/">Esqueceu a senha?</a>.
-                        </p>
+
+                    <div class="btnLogin">
+                        <input id="login-btn" type="button" class="btn-all" value="Entrar" />
 
                     </div>
 
+                    <div class="esqueci-a-Senha">
+
+                        <a href="#" id="registrar-pagina-login">
+                            <p>Esqueceu a senha?</p>
+                        </a>
+
+
+                    </div>
 
                     <div>
-                        <a href="register-page.html">
-                            <p>Criar nova conta</p>
+                        <a href="register-page.html" id="registrar-pagina-login">
+                            <p>Não tem uma conta?</p>
                         </a>
 
                     </div>
-
-                    <input id="login-btn" type="button" class="btn-all" value="Entrar" />
-
                 </section>
             </form>
 
