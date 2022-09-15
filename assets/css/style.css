@@ -626,7 +626,7 @@ header {
   width: 84%;
   height: 80%;
   /* margin-top: 30px; */
-  background-image: url(..//img/backgrounds/Layout.jpg);
+  background-image: url(..//img/backgrounds/mobile-back.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.473);
@@ -828,7 +828,6 @@ header {
   height: 420px;
   margin: 20px 0px;
 }
-
 
 .box-catalogue figure {
 
@@ -1633,5 +1632,217 @@ footer i:hover {
     justify-content: flex-start;
     padding: 10px;
   }
+}
 
+/************** RESPONSIVIDADE ****************/
+
+@media (max-width: 1250px) {
+ 
+  /******* BANNER HOME ******/
+  .banner-initial figure{
+    width: 100%;
+    height: 100vh;
+  }
+
+  /******* CATEGORIAS ******/
+  .scrolling-wrapper{
+
+    width: 88%;
+    gap: 6px;
+
+  }
+
+  .box{
+
+    width: 120px;
+
+  }
+
+  .titles-page{
+
+    width: 88%;
+
+  }
+
+  /******* CATALOGUE ******/
+  .box-catalogue{
+
+    width: 88%;
+  }
+
+  .box-catalogue li{
+    width: 260px;
+  }
+
+  /******* CATALOGUE ******/
+
+  .payments div{
+    width: 87%;
+  }
+
+  /******* CARROSSEL ******/
+
+  .carrossel{
+    width: 105%;
+  }
+
+  .carrossel li{
+    width: 270px;
+  }
+
+  /*******  SEE ALL ******/
+  
+  .see-all{
+    width: 87%;
+  }
+}
+
+@media (max-width: 1104px) {
+
+  /******* CATEGORIAS ******/
+  .scrolling-wrapper{
+
+    width: 88%;
+    gap: 30px;
+    
+  }
+
+  .box{
+
+    width: 31%;
+  }
+
+  .titles-page{
+
+    margin-top: 100px
+  }
+
+  /******* CATALOGUE ******/
+
+  .box-catalogue{
+    
+  }
+
+  .box-catalogue li{
+
+    width: 227px;
+    height: 340px;
+    margin-bottom: 0px;
+  }
+
+  .box-catalogue li figure{
+
+    height: 80%;
+  }
+
+  .box-catalogue li figcaption{
+
+    height: 20%;
+  }
+
+  .payments{
+
+
+    margin: 0px;
+    margin-top: 90px;
+  }
+
+  /******* CARROSSEL ******/
+
+  .carrossel li{
+
+    width: 227px;
+    height: 340px;
+    margin-bottom: 0px;
+  }
+
+  .carrossel li figure{
+
+    height: 80%;
+  }
+
+  .carrossel li figcaption{
+
+    height: 20%;
+  }
+
+  .carrossel li figcaption h4{
+    font-size: 1rem;
+  }
+
+  /*******  SEE ALL ******/
+  
+  .see-all{
+    width: 87%;
+  }
+}
+
+@media (max-width: 991px) {
+
+  /******* CATEGORIAS ******/
+  .scrolling-wrapper{
+    width: 88%;
+    gap: 30px;
+  }
+
+  .box{
+    width: 31%;
+  }
+
+  .titles-page{
+    margin-top: 100px
+  }
+
+  /******* CATALOGUE ******/
+
+  .box-catalogue li{
+
+    width: 203px;
+    height: 340px;
+    margin-bottom: 0px;
+  }
+
+  .box-catalogue li figure{
+
+    height: 80%;
+  }
+
+  .box-catalogue li figcaption{
+
+    height: 20%;
+  }
+
+  .box-catalogue li figcaption h1{
+
+    font-size: .9rem;
+  }
+
+  /******* PAYMENTS ******/
+
+  .payments div{
+
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+  }
+  
+  .none-payment{
+    
+    display: none;
+  }
+
+  /******* CARROSSEL ******/
+
+  .carrossel li figcaption h1{
+
+    font-size: .9rem;
+  }
+
+  /*******  SEE ALL ******/
+  
+  .see-all{
+    width: 87%;
+  }
 }
