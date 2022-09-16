@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <!-- LINK CSS STYLE CARRINHO -->
   <link rel="stylesheet" href="assets/css/styleCarrinho.css">
+  <!------ FAVICON ------->
+  <link rel="shortcut icon" href="assets/img/favicon/830da1b9d031a459d1fc38de3c90197c_tn-removebg-preview.png" type="image/x-icon">
   <!------ LINK FONTAWESOME ------->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
@@ -19,14 +21,15 @@
   <!--icon Dark-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css" />
   <!-- SCRIPT JIVOCHAT -->
-  <!-- <script src="//code.jivosite.com/widget/1YD6UYyWt8" async></script>-> -->
-  <!-- <---- SCRIPT - FEATHERICONS ----- -->
+  <!-- <script src="//code.jivosite.com/widget/1YD6UYyWt8" async></script>-->
+  <!----- SCRIPT - FEATHERICONS ----- -->
   <script src="https://unpkg.com/feather-icons"></script>
   <!-- SWEETALERT PERSONALIZADO -->
   <script src="sweetalert2.all.min.js"></script>
   <script src="sweetalert2.min.js"></script>
 
   <script src="assets/js/index.js" defer></script>
+
   <title>E-Ecommerce - Home</title>
 
 </head>
@@ -34,7 +37,6 @@
 <body>
 
   <!------ MENU ------->
-
   <header>
 
     <nav class="menu">
@@ -160,8 +162,7 @@
 
   </header>
 
-  <!------ BANNER INICIAL ------->
-
+  <!-------- BANNER INICIAL -------->
   <main class="banner-initial">
     <figure>
       <div class="search-banner">
@@ -183,8 +184,7 @@
     </figure>
   </main>
 
-  <!-- CATEGORIAS -->
-
+  <!---------- CATEGORIAS ---------->
   <section class="categories">
 
     <div class="titles-page">
@@ -238,8 +238,7 @@
 
   </section>
 
-  <!------ CATALOGUE ------->
-
+  <!----------- CATALOGUE ---------->
   <section class="catalogue-initial">
 
     <div class="titles-page">
@@ -393,16 +392,33 @@
         </figcaption>
       </li>
 
+      <li class="catalogue-suport">
+        <figure>
+          <img src="assets/img/projects/alexa.png" alt="Alexa Echo Dot">
+        </figure>
+        <figcaption>
+          <div>
+            <h1>Alexa Echo Dot</h1>
+            <h4>R$ 379,05</h4>
+          </div>
+
+          <section>
+            <i data-produtoid="7" class="fas fa-shopping-cart"></i>
+            <i class="fas fa-heart"></i>
+            </div>
+          </section>
+        </figcaption>
+      </li>
+
     </ul>
 
   </section>
 
-  <!------ TIPOS DE PAGAMENTOS ------->
-
+  <!------ TIPOS DE PAGAMENTOS ----->
   <section class="payments">
     <div>
 
-      <section>
+      <section class="none-payment">
         <h1>Melhor forma de pagar</h1>
         <p>Fácil, prático e divertido</p>
       </section>
@@ -417,15 +433,15 @@
         </li>
 
         <li>
-          <i class="far fa-credit-card"></i>
+          <i class="fas fa-barcode"></i>
           <section>
             <h3>Boleto</h3>
             <p>Escaneie na hora</p>
           </section>
         </li>
-
+        
         <li>
-          <i class="far fa-credit-card"></i>
+          <i class="fas fa-qrcode"></i>
           <section>
             <h3>Via Pix</h3>
             <p>000.000.000-00</p>
@@ -437,8 +453,7 @@
 
   </section>
 
-  <!------ PRODUCTS RECENTS ------->
-
+  <!------- PRODUCTS RECENTS ------->
   <section class="products">
 
     <div class="titles-page">
@@ -508,6 +523,23 @@
             <div>
               <h1>Air Jordan</h1>
               <h4>R$ 329,99</h4>
+            </div>
+            <section>
+              <i data-produtoid="3" class="fas fa-shopping-cart"></i>
+              <i class="fas fa-heart"></i>
+              </div>
+            </section>
+          </figcaption>
+        </li>
+
+        <li>
+          <figure>
+            <img src="assets/img/projects/alexa.png" alt="HeadPhone">
+          </figure>
+          <figcaption>
+            <div>
+              <h1>Alexa Echo Dot</h1>
+              <h4>R$ 379,05</h4>
             </div>
             <section>
               <i data-produtoid="3" class="fas fa-shopping-cart"></i>
@@ -602,8 +634,7 @@
 
   </section>
 
-  <!------ CONTACT NOS ------->
-
+  <!---------- CONTACT NOS --------->
   <section class="payments pay-contact">
     <div>
 
@@ -619,8 +650,7 @@
     </div>
   </section>
 
-  <!------ PRODUCTS RECENTS ------->
-
+  <!------ PRODUCTS RECENTS -------->
   <section class="products">
 
     <div class="titles-page">
@@ -784,8 +814,7 @@
 
   </section>
 
-  <!-------------- SEE ALL ---------------->
-
+  <!------------ SEE ALL ----------->
   <section class="see-all">
     <div class="see-all-left">
       <h5>Último sapato elegante</h5>
@@ -802,8 +831,8 @@
   </section>
 
   <!-------------- FOOTER ---------------->
-
   <footer>
+
     <div class="media">
 
       <div class="media-title">
@@ -820,42 +849,44 @@
 
       </div>
 
-      <section class="copyrigth">
+      <a class="copyrigth">
         <p>© 2022 Dev Project. Todos os direitos reservados.</p>
         <p>Termos, acordos e Política de Privacidade.</p>
-      </section>
+      </a>
 
     </div>
 
-    <div class="shop">
-      <h3>Shop</h3>
-      <ul>
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Location</a></li>
-        <li><a href="#">FAQ</a></li>
-      </ul>
-    </div>
-
-    <div class="links">
-      <h3>Links</h3>
-      <ul>
-        <li><a href="#">Eletronics</a></li>
-        <li><a href="#">Summer</a></li>
-        <li><a href="#">Book</a></li>
-        <li><a href="#">Cosmetics</a></li>
-        <li><a href="#">Furnitures</a></li>
-      </ul>
-    </div>
-
-    <div class="contact">
-      <h3>Contact</h3>
-      <ul>
-        <li><a href="tel:+551234567890">+55 12 3456 7890</a></li>
-        <li><a href="mailto:e-ecommerce@gmail.com">e-ecommerce@gmail.com</a></li>
-        <li><a href="#">Rua Principal, 123. Cidade - ET</a></li>
-      </ul>
-    </div>
+    <section>
+      <div class="shop">
+        <h3>Shop</h3>
+        <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Location</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+  
+      <div class="links">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="#">Eletronics</a></li>
+          <li><a href="#">Summer</a></li>
+          <li><a href="#">Book</a></li>
+          <li><a href="#">Cosmetics</a></li>
+          <li><a href="#">Furnitures</a></li>
+        </ul>
+      </div>
+  
+      <div class="contact">
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="tel:+551234567890">+55 12 3456 7890</a></li>
+          <li><a href="mailto:e-ecommerce@gmail.com">e-ecommerce@gmail.com</a></li>
+          <li><a href="#">Rua Principal, 123. Cidade - ET</a></li>
+        </ul>
+      </div>
+    </section>
 
   </footer>
 
