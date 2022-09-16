@@ -258,7 +258,7 @@ input[type="checkbox"] {
 
 .dark .login-sign-in {
 
-  background-color: var(--secundary-back-darck);
+  background-color: va690r(--secundary-back-darck);
 }
 
 .dark .login-sign-in h1 {
@@ -628,6 +628,7 @@ header {
   /* margin-top: 30px; */
   background-image: url(..//img/backgrounds/mobile-back.jpg);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.473);
   transition: .5s;
@@ -1719,10 +1720,6 @@ footer i:hover {
 
   /******* CATALOGUE ******/
 
-  .box-catalogue{
-    
-  }
-
   .box-catalogue li{
 
     width: 227px;
@@ -1844,5 +1841,508 @@ footer i:hover {
   
   .see-all{
     width: 87%;
+  }
+}
+
+@media (max-width: 947px) {
+  
+  /******* CATEGORIAS ******/
+  .scrolling-wrapper{
+    width: 88%;
+    gap: 20px;
+  }
+
+  .box{
+    width: 31%;
+  }
+
+  .titles-page{
+    margin-top: 100px
+  }
+
+  /******* CATALOGUE ******/
+
+  .box-catalogue{
+    gap: 35px;
+  }
+
+  .box-catalogue li{
+
+    width: 253px;
+    height: 340px;
+    margin-bottom: 0px;
+  }
+
+  .box-catalogue li figure{
+
+    height: 80%;
+  }
+
+  .box-catalogue li figcaption{
+    @media (max-width: 991px) {
+
+      /******* CATEGORIAS ******/
+      .scrolling-wrapper{
+        width: 88%;
+        gap: 30px;
+      }
+    
+      .box{
+        width: 31%;
+      }
+    
+      .titles-page{
+        margin-top: 100px
+      }
+    
+      /******* CATALOGUE ******/
+    
+      .box-catalogue li{
+    
+        width: 203px;
+        height: 340px;
+        margin-bottom: 0px;
+      }
+    
+      .box-catalogue li figure{
+    
+        height: 80%;
+      }
+    
+      .box-catalogue li figcaption{
+    
+        height: 20%;
+      }
+    
+      .box-catalogue li figcaption h1{
+    
+        font-size: .9rem;
+      }
+    
+      /******* PAYMENTS ******/
+    
+      .payments div{
+    
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+      }
+      
+      .none-payment{
+        
+        display: none;
+      }
+    
+      /******* CARROSSEL ******/
+    
+      .carrossel li figcaption h1{
+    
+        font-size: .9rem;
+      }
+    
+      /*******  SEE ALL ******/
+      
+      .see-all{
+        width: 87%;
+      }
+    }
+    height: 20%;
+  }
+
+  .box-catalogue li figcaption h1{
+
+    font-size: .9rem;
+  }
+
+  /******* PAYMENTS ******/
+
+  .payments div{
+
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+  }
+  
+  .none-payment{
+    
+    display: none;
+  }
+
+  /******* CARROSSEL ******/
+
+  .carrossel li figcaption h1{
+
+    font-size: .8rem;
+  }
+
+  .pay-contact div{
+
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  /*******  SEE ALL ******/
+  
+  .see-all{
+    width: 87%;
+  }
+}
+
+@media (max-width: 690px) {
+  
+  /******* CATEGORIAS ******/
+  .scrolling-wrapper{
+    width: 88%;
+    gap: 20px;
+    height: 200px;
+    width: 93%;
+    position: relative;
+    left: 24px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    margin-bottom: -30px;
+  }
+
+  .scrolling-wrapper::-webkit-scrollbar{
+    display: none;
+  } 
+
+  .box{
+    width: 31%;
+    height: 100%;
+  }
+
+  .titles-page{
+    margin-top: 100px
+  }
+
+  /******* CATALOGUE ******/
+
+  .box-catalogue{
+    gap: 20px;
+  }
+
+  .box-catalogue li{
+
+    width: 188px;
+    height: 300px;
+    margin-bottom: 0px;
+  }
+
+  .box-catalogue li figure{
+
+    height: 80%;
+  }
+
+  .box-catalogue li figcaption h1{
+
+    font-size: .8rem;
+  }
+
+  /******* PAYMENTS ******/
+
+  .payments div{
+
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+  }
+
+  .payments div ul{
+    
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+
+  .payments div ul li{
+    padding: 0px;
+    margin: 0px;
+    width:fit-content;
+  }
+
+  .payments div ul li section p{
+
+    font-size: .7rem;
+  }
+
+  /******* CARROSSEL ******/
+
+  .carrossel li figcaption h1{
+
+    font-size: .8rem;
+  }
+
+  .pay-contact div{
+
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  /*******  SEE ALL ******/
+  
+  .see-all{
+    width: 87%;
+  }
+
+  /******* FOOTER ******/
+
+  footer{
+
+    padding: 30px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+
+  footer section{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .media{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  .shop, .links, .contact{
+    width: 25%;
+    height: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  
+  /******* CATALOGUE ******/
+
+  .box-catalogue{
+    gap: 20px;
+  }
+
+  .box-catalogue li{
+
+    width: 210px;
+    height: 300px;
+    margin-bottom: 0px;
+  }
+
+  .box-catalogue li figure{
+
+    height: 80%;
+  }
+
+  .box-catalogue li figcaption h1{
+
+    font-size: .8rem;
+  }
+
+  .catalogue-suport{
+
+    display: none;
+  }
+
+  /******* PAYMENTS ******/
+
+  .payments div ul li section p{
+
+    font-size: .5rem;
+  }
+
+  /******* FOOTER ******/
+
+  footer{
+
+    padding: 30px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+
+  footer section{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .media{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  .shop, .links, .contact{
+    width: 25%;
+    height: 300px;
+  }
+  .shop a, .links a, .contact a{
+
+    font-size: .8rem;
+  }
+}
+
+@media (max-width: 460px) {
+
+  /******* MENU ******/
+
+  .menu div h1{
+
+    font-size: 1.5rem;
+  }
+
+  /******* BANNER INITIAL ******/
+
+  .search-banner h4,
+  .search-banner div{
+
+    margin-left: -34px;
+  }
+
+  .search-banner h4{
+    font-size: 3rem;
+    width: 100%;
+  }
+
+  .search-banner div input{
+
+    width: 90%;
+  }
+  
+  .frete p{
+    font-size: 1rem;
+  }
+
+  /******* CATEGORIAS ******/
+  .scrolling-wrapper{
+    left: 18px;
+  }
+
+  /******* CATALOGUE ******/
+
+  .box-catalogue{
+    gap: 20px;
+  }
+
+  .box-catalogue li{
+
+    width: 192px;
+    height: 300px;
+    margin-bottom: 0px;
+  }
+
+  .box-catalogue li figure{
+
+    height: 80%;
+  }
+
+  .box-catalogue li figcaption h1{
+
+    font-size: .8rem;
+  }
+
+  /******* PAYMENTS ******/
+
+  .payments div{
+
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+  }
+
+  .payments div ul{
+    
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+
+  .payments div ul li{
+    padding: 0px;
+    margin: 0px;
+    width:fit-content;
+  }
+
+  .payments div ul li section p{
+
+    display: none;
+  }
+
+  /******* CARROSSEL ******/
+
+  .carrossel li figcaption h1{
+
+    font-size: .8rem;
+  }
+
+  .pay-contact div{
+
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  /*******  SEE ALL ******/
+  
+  .see-all{
+    width: 87%;
+  }
+
+  /******* FOOTER ******/
+
+  footer{
+
+    padding: 30px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+
+  footer section{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .media{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  .shop, .links, .contact{
+    width: 25%;
+    height: 300px;
   }
 }
