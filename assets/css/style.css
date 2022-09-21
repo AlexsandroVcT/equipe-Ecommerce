@@ -2097,37 +2097,6 @@ footer i:hover {
     width: 87%;
   }
 
-  /******* FOOTER ******/
-
-  footer{
-
-    padding: 30px;
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-
-  footer section{
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-
-  .media{
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0px;
-  }
-
-  .shop, .links, .contact{
-    width: 25%;
-    height: 300px;
-  }
 }
 
 @media (max-width: 500px) {
@@ -2314,35 +2283,4 @@ footer i:hover {
     width: 87%;
   }
 
-  /******* FOOTER ******/
-
-  footer{
-
-    padding: 30px;
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-
-  footer section{
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-
-  .media{
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0px;
-  }
-
-  .shop, .links, .contact{
-    width: 25%;
-    height: 300px;
-  }
 }
