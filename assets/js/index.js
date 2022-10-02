@@ -205,3 +205,9 @@ const sair = () => {
   window.location.href = ''
 }
 
+$(document).ready( () => {
+  console.log()
+  let texto = localStorage.getItem('userLogado') ? "<li onclick='sair() '><p> sair </p></li>" : ''
+  $('#ul-OpenConfig').html($('#ul-OpenConfig').html() + texto)
+})
+
