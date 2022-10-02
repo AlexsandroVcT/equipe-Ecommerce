@@ -186,8 +186,11 @@ const getText = (id, {
   
     <header>
       
-      <figure>
+      <figure class="imageEfect" onclick='removerFromCart(${id})'>
         ${img}
+        <div id="hoverEfectImage">
+        <i class="fas fa-trash-alt"></i>
+        </div>
       </figure>
       <figcaption>
         <h6>${nome} </h6>
@@ -210,23 +213,29 @@ const getText = (id, {
 }
 
 // seta o total no carrinho
-const setTotal = (total) => document.querySelector('.total').innerHTML =
-  `
+const setTotal = (total) => document.querySelector('.total').innerHTML = total * 0.9 > 0 
+?
+`
   <h2>Subtotal: <b>${formatarValorRS((total * 0.9))}</b> </h2>
+`
+: 
+`
+  <h2>Subtotal: NENHUM ITEM ESCOLHIDO </h2>
 `
 
 // pega o valor e a quantidade, com base no objeto passado e multiplica eles entri si
 const getTotal = ({ valor, qtd }) => valor * qtd
 
 //ele seta no documento, o numero de produtos no carrinho
-const setNumeroProdutos = numero => document.querySelector('#cont-itens-carrinho').innerHTML = numero
+const setNumeroProdutos = numero => document.querySelector('#cont-itens-carrinho').innerHTML =  numero > 0 ? numero :  ''
 
 //ele retorna o valor de produtos no carrinho com base no objeto passado como parametro
 const getNumeroProdutos = obj => Object.keys(obj).length
 
 // ele seta os valores no documento, usando todas as outras funcoes acima
 const setarValores = (id) => {
-  const cart = JSON.parse(localStorage.getItem(`conta${id}`)).cart
+  let idUserLogado = getIdUser()
+  const cart = JSON.parse(localStorage.getItem(`conta${idUserLogado}`)).cart
 
   let texto = ''
 
@@ -316,7 +325,7 @@ document.body.onload = () => {
 const getIdUser = () => {
   for (let i = 1; i < localStorage.getItem('id'); i++) {
     if (JSON.parse(localStorage.getItem(`conta${i}`)).e === localStorage.getItem('userLogado')) {
-      return i
+      return i     
     }
   }
 }
@@ -338,4 +347,13 @@ btnFinalizarCompras.addEventListener("click", function () {
     icon: 'question'
   })
 })
+
+const removerFromCart = id => {
+    let idUserLogado = getIdUser()
+    let cart = JSON.parse(localStorage.getItem(`conta${idUserLogado}`)).cart
+    delete cart[id]
+    document.querySelector(`.div${id}`).remove()
+    reajustarObjeto(cart)
+    setarValores(id)
+}
 
