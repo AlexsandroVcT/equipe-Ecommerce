@@ -18,6 +18,46 @@
   --box-shadow-contents-hover: 0px 0px 6px 2px rgba(0, 0, 0, 0.363);
 }
 
+#hoverEfectImage{
+
+  background-color: #15151590;
+  backdrop-filter: blur(2px);
+  border-radius: 5px;
+  top: 0px;
+  left: 0px;
+  width: 108px;
+  height: 95px;
+  animation: hoverImageEfect .3s;
+  position: absolute;
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+}
+
+@keyframes hoverImageEfect {
+  0%{
+    height: 0%;
+  }
+}
+
+#hoverEfectImage i{
+  
+  opacity: 1;
+  color: var(--important-color);
+  font-size: 30px;
+}
+.imageEfect:hover #hoverEfectImage{
+  display: flex;
+}
+
+.imageEfect{
+  
+  background-color: red;
+  position: relative;
+  cursor: pointer;
+}
+
 /* Menu do carrinho */
 
 .menu-scroll .cardCarrinho-container {
@@ -284,7 +324,7 @@
   color: var(--important-color);
 }
 
-@media all and (max-width: 425px) {
+@media all and (max-width: 768px) {
 
   .box-cart {
     width: 100%;
