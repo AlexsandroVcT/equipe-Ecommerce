@@ -44,7 +44,7 @@
     margin-top: 40px;
     display: flex;
     gap: 15px;
-
+    margin-left: 40px;
 }
 
 .login-medias-socials a {
@@ -61,8 +61,10 @@
 /**** login-sign-in ****/
 
 .login-sign-in {
-    height: 35rem;
+
+    height: 34.2rem;
     min-width: 400px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -72,11 +74,8 @@
     background-color: transparent;
     border-width: medium;
     border-style: solid;
-    border-color: rgb(255, 0, 0);
-
+    background-color: var(--primary-color);
 }
-
-
 
 .login-sign-in h1 {
     font-size: 2.5rem;
@@ -165,8 +164,9 @@ input:focus {
     text-transform: uppercase;
 }
 
-.register>input:hover,
-.login-sign-in>input:hover {
+.register input:hover,
+.login-sign-in input:hover {
+
     cursor: pointer;
     background-color: var(--important-color);
 }
