@@ -2,16 +2,15 @@
 
 .login-medias-socials {
 
-    margin-top: 40px;
     display: flex;
-    gap: 15px;
-
+    margin-left: 30px;
 }
 
 .login-medias-socials a {
-
+    
     width: 40px;
     height: 40px;
+    margin-left: 15px;
     background-color: var(--secundary-background);
     border-radius: 50px;
     display: flex;
@@ -19,11 +18,13 @@
     align-items: center;
 }
 
+
 /**** login-sign-in ****/
 
 .login-sign-in {
-    height: 35rem;
+    height: 34.2rem;
     min-width: 400px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,8 +33,7 @@
     border-bottom-right-radius: 10px;
     border-width: medium;
     border-style: solid;
-    border-color: rgb(255, 0, 0);
-
+    background-color: var(--primary-color);
 }
 
 .login-sign-in h1 {
@@ -171,3 +171,17 @@ input:focus {
 
 
 /* _______________________CODIGOS DO CADRASTO.CSS && LOGIN.CSS SÃO OS MESMOS_________________FIM_______________________ */
+
+@media all and (max-width: 768px) {
+    
+    .login-sign-in,
+    .login-register{
+
+        width: 100vw;
+        height: 100vh;
+        margin: 0px;
+        position: absolute;
+        border-radius: 0px;
+        border: none;
+    }
+}
