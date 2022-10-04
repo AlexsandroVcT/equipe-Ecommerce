@@ -207,7 +207,11 @@ const sair = () => {
 
 $(document).ready( () => {
   console.log()
-  let texto = localStorage.getItem('userLogado') ? "<li onclick='sair() '><p> sair </p></li>" : ''
-  $('#ul-OpenConfig').html($('#ul-OpenConfig').html() + texto)
+  let texto = localStorage.getItem('userLogado') ? "<li onclick='sair()'><p> sair </p></li>" : ''
+  $('#li-sair').css({
+    width: '100%',
+    marginLeft: '10%'
+  })
+  $('#li-sair').html(texto)
+  
 })
-
