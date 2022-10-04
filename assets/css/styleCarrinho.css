@@ -18,8 +18,7 @@
   --box-shadow-contents-hover: 0px 0px 6px 2px rgba(0, 0, 0, 0.363);
 }
 
-#hoverEfectImage{
-
+#hoverEfectImage {
   background-color: #15151590;
   backdrop-filter: blur(2px);
   border-radius: 5px;
@@ -36,23 +35,24 @@
 }
 
 @keyframes hoverImageEfect {
-  0%{
+  0% {
     height: 0%;
   }
 }
 
-#hoverEfectImage i{
-  
+#hoverEfectImage i {
+
   opacity: 1;
-  color: var(--important-color);
+  color: #fefefe;
   font-size: 30px;
 }
-.imageEfect:hover #hoverEfectImage{
+
+.imageEfect:hover #hoverEfectImage {
   display: flex;
 }
 
-.imageEfect{
-  
+.imageEfect {
+
   background-color: red;
   position: relative;
   cursor: pointer;
@@ -279,7 +279,7 @@
   align-items: center;
   padding: 0px 20px;
   font-size: .7rem;
-  background-color: var(--back-darck);
+  /* background-color: var(--back-darck); */
   text-transform: uppercase;
   color: var(--important-color);
 }
@@ -289,8 +289,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-weight: 300;
-  color: var(--secundary-background);
+  font-weight: 500;
+  color: black;
 }
 
 #totalFinal h2 b {
@@ -302,18 +302,19 @@
 
 #btnFinalizarCarrinho {
   height: 8%;
-  margin: 10px 0px;
-  border-radius: 20px;
-  width: 90%;
+  margin: 42px 0px;
+  border-radius: 5px;
+  width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0px 81px;
   font-size: .7rem;
-  background-color: var(--back-darck);
+  background-color: var(--important-color);
   text-transform: uppercase;
   color: var(--important-color);
   cursor: pointer;
+  border: none;
 }
 
 #btnFinalizarCarrinho h2 {
@@ -321,7 +322,7 @@
   text-align: center;
   justify-content: center;
   font-size: -1.3rem;
-  color: var(--important-color);
+  color: #fefefe;
 }
 
 @media all and (max-width: 768px) {

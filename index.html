@@ -11,7 +11,8 @@
   <!-- LINK CSS STYLE CARRINHO -->
   <link rel="stylesheet" href="assets/css/styleCarrinho.css">
   <!------ FAVICON ------->
-  <link rel="shortcut icon" href="assets/img/favicon/830da1b9d031a459d1fc38de3c90197c_tn-removebg-preview.png" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/img/favicon/830da1b9d031a459d1fc38de3c90197c_tn-removebg-preview.png"
+    type="image/x-icon">
   <!------ LINK FONTAWESOME ------->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
@@ -58,8 +59,8 @@
         <div class="config">
           <a><i class="fas fa-shopping-bag" id="cart-btn"></i>
 
-            <!-- Total de itens -->
-            <p id="cont-itens-carrinho"></p>
+            <!-- Total de itens na sacolinha do carrinho -->
+            <p id="cont-itens-carrinho" class="sacolinhaDark"></p>
 
           </a>
 
@@ -86,12 +87,15 @@
 
             </div>
 
+
             <span id="totalFinal" class="total">
               <h2> Nenhum item escolhido </h2>
             </span>
 
+
+
             <button id="btnFinalizarCarrinho">
-              <h2>Finalizar Compras</h2>
+              <h2>Comprar</h2>
             </button>
           </section>
 
@@ -99,6 +103,7 @@
 
         <!-- Email do usuario CONFIG -->
         <span id="user-email">
+
         </span>
 
         <!---- OPEN CONFIG ---->
@@ -111,6 +116,7 @@
 
 
         <div id="openConfig" class="btn-config">
+
 
           <ul id="ul-OpenConfig">
 
@@ -127,7 +133,7 @@
             </li>
 
 
-            <div>
+            <div class="ul-OpenConfig">
               <input type="checkbox" name="chenge-theme" id="chenge-theme" />
               <label for="chenge-theme">
 
@@ -147,7 +153,9 @@
             <li>
               <p>Feedbacks</p>
             </li>
-            
+
+            <span id='li-sair'></span>
+
           </ul>
 
         </div>
@@ -435,7 +443,7 @@
             <p>Escaneie na hora</p>
           </section>
         </li>
-        
+
         <li>
           <i class="fas fa-qrcode"></i>
           <section>
@@ -862,7 +870,7 @@
           <li><a href="#">FAQ</a></li>
         </ul>
       </div>
-  
+
       <div class="links">
         <h3>Links</h3>
         <ul>
@@ -873,7 +881,7 @@
           <li><a href="#">Furnitures</a></li>
         </ul>
       </div>
-  
+
       <div class="contact">
         <h3>Contact</h3>
         <ul>

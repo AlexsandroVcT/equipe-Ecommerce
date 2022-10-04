@@ -6,7 +6,6 @@ window.addEventListener("scroll", function () {
 })
 
 // CARROSSEL PRODUTOS EM DESTAQUES
-
 $('.carrone').slick({
   prevArrow: '.slick-prev-one',
   nextArrow: '.slick-next-one',
@@ -146,7 +145,6 @@ chageThemeBtn.addEventListener("change", function () {
 });
 
 // ABRIR MODAL CONFIGURATIONS
-
 function Mudarestado(el) {
   let display = document.getElementById(el).style.display;
   if (display == "none")
@@ -172,42 +170,35 @@ function scrollCart() {
 }
 scrollCart()
 
-//
-
-function loginOuCadrasto() {
+//SISTEMA DE USUARIO LOGADO, DEPOIS QUE CRIAR A CONTA
+function loggedinuser() {
   window.addEventListener('load', () => {
     let email = localStorage.getItem('userLogado')
 
     document.getElementById('user-email').innerHTML = email === null
-      ? '<a href="login-page.html"><i class="fa-solid fa-user"></i></a>'
-      : `<img src="assets/img/login-back/msn2.png" id="iconMSN">
+      ? '<a href="login-page.html"><i class="fa-solid fa-user fas"></i></a>'
+      : `'<a><i class="fa-solid fa-user fas"></i></a>'
       
       `
-
-
-    // document.querySelector('#ul-OpenConfig').innerHTML += email === "" //Aqui ta dando conflito com a config dark
-    //   ? ''
-    //   :
-    //   `
-    //   <li onclick='sair()'>
-    //           <p> sair </p>
-    //         </li>
-
-    //       `
-
   })
 
 
 }
-loginOuCadrasto()
+loggedinuser()
 const sair = () => {
   localStorage.removeItem('userLogado')
   window.location.href = ''
 }
 
-$(document).ready( () => {
-  console.log()
-  let texto = localStorage.getItem('userLogado') ? "<li onclick='sair() '><p> sair </p></li>" : ''
-  $('#ul-OpenConfig').html($('#ul-OpenConfig').html() + texto)
+// SE O USUARIO TIVER LOGADO, MOSTRE O INPUT DE SAIR , PARA PODER SAIR DA CONTA
+
+$(document).ready(() => {
+  let texto = localStorage.getItem('userLogado') ? "<li onclick='sair()'><p> sair </p></li>" : ''
+  $('#li-sair').css({
+    width: '100%',
+    marginLeft: '10%'
+  })
+  $('#li-sair').html(texto)
+
 })
 

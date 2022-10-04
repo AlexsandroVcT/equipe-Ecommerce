@@ -294,28 +294,11 @@ input[type="checkbox"] {
 }
 
 #iconMSN {
-  width: 58px;
+  width: 12;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-@keyframes iconMSN {
-  0% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
-#iconMSN {
-  -webkit-animation: iconMSN .90s linear infinite;
-  -moz-animation: iconMSN .90s linear infinite;
-  -ms-animatiom: iconMSN .90s linear infinite;
-  -o-animation: iconMSN .90s linear infinite;
-  animation: iconMSN .90s linear infinite;
+  color: #1b1b1b;
 }
 
 /***** RESET PAGE *****/
@@ -382,19 +365,18 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 20px 0;
+  padding: 6px 0;
   transition: .5s;
 }
 
-
 .menu ul {
-
   width: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
+
 
 .menu ul li {
 
@@ -1414,7 +1396,7 @@ footer i:hover {
   justify-content: center;
   align-items: center;
   background-image: var();
-  
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1457,8 +1439,8 @@ footer i:hover {
 
 }
 
-.login-register section{
-  
+.login-register section {
+
   width: 100%;
   height: 100%;
   background-color: #00000090;
@@ -1645,62 +1627,62 @@ footer i:hover {
 /************** RESPONSIVIDADE ****************/
 
 @media (max-width: 1250px) {
- 
+
   /******* BANNER HOME ******/
-  .banner-initial figure{
+  .banner-initial figure {
     width: 100%;
     height: 100vh;
   }
 
   /******* CATEGORIAS ******/
-  .scrolling-wrapper{
+  .scrolling-wrapper {
 
     width: 88%;
     gap: 6px;
 
   }
 
-  .box{
+  .box {
 
     width: 120px;
 
   }
 
-  .titles-page{
+  .titles-page {
 
     width: 88%;
 
   }
 
   /******* CATALOGUE ******/
-  .box-catalogue{
+  .box-catalogue {
 
     width: 88%;
   }
 
-  .box-catalogue li{
+  .box-catalogue li {
     width: 260px;
   }
 
   /******* CATALOGUE ******/
 
-  .payments div{
+  .payments div {
     width: 87%;
   }
 
   /******* CARROSSEL ******/
 
-  .carrossel{
+  .carrossel {
     width: 105%;
   }
 
-  .carrossel li{
+  .carrossel li {
     width: 270px;
   }
 
   /*******  SEE ALL ******/
-  
-  .see-all{
+
+  .see-all {
     width: 87%;
   }
 }
@@ -1708,43 +1690,43 @@ footer i:hover {
 @media (max-width: 1104px) {
 
   /******* CATEGORIAS ******/
-  .scrolling-wrapper{
+  .scrolling-wrapper {
 
     width: 88%;
     gap: 30px;
-    
+
   }
 
-  .box{
+  .box {
 
     width: 31%;
   }
 
-  .titles-page{
+  .titles-page {
 
     margin-top: 100px
   }
 
   /******* CATALOGUE ******/
 
-  .box-catalogue li{
+  .box-catalogue li {
 
     width: 227px;
     height: 340px;
     margin-bottom: 0px;
   }
 
-  .box-catalogue li figure{
+  .box-catalogue li figure {
 
     height: 80%;
   }
 
-  .box-catalogue li figcaption{
+  .box-catalogue li figcaption {
 
     height: 20%;
   }
 
-  .payments{
+  .payments {
 
 
     margin: 0px;
@@ -1753,30 +1735,30 @@ footer i:hover {
 
   /******* CARROSSEL ******/
 
-  .carrossel li{
+  .carrossel li {
 
     width: 227px;
     height: 340px;
     margin-bottom: 0px;
   }
 
-  .carrossel li figure{
+  .carrossel li figure {
 
     height: 80%;
   }
 
-  .carrossel li figcaption{
+  .carrossel li figcaption {
 
     height: 20%;
   }
 
-  .carrossel li figcaption h4{
+  .carrossel li figcaption h4 {
     font-size: 1rem;
   }
 
   /*******  SEE ALL ******/
-  
-  .see-all{
+
+  .see-all {
     width: 87%;
   }
 }
@@ -1784,46 +1766,46 @@ footer i:hover {
 @media (max-width: 991px) {
 
   /******* CATEGORIAS ******/
-  .scrolling-wrapper{
+  .scrolling-wrapper {
     width: 88%;
     gap: 30px;
   }
 
-  .box{
+  .box {
     width: 31%;
   }
 
-  .titles-page{
+  .titles-page {
     margin-top: 100px
   }
 
   /******* CATALOGUE ******/
 
-  .box-catalogue li{
+  .box-catalogue li {
 
     width: 203px;
     height: 340px;
     margin-bottom: 0px;
   }
 
-  .box-catalogue li figure{
+  .box-catalogue li figure {
 
     height: 80%;
   }
 
-  .box-catalogue li figcaption{
+  .box-catalogue li figcaption {
 
     height: 20%;
   }
 
-  .box-catalogue li figcaption h1{
+  .box-catalogue li figcaption h1 {
 
     font-size: .9rem;
   }
 
   /******* PAYMENTS ******/
 
-  .payments div{
+  .payments div {
 
     height: 150px;
     display: flex;
@@ -1831,141 +1813,142 @@ footer i:hover {
     justify-content: center;
     padding: 0px;
   }
-  
-  .none-payment{
-    
+
+  .none-payment {
+
     display: none;
   }
 
   /******* CARROSSEL ******/
 
-  .carrossel li figcaption h1{
+  .carrossel li figcaption h1 {
 
     font-size: .9rem;
   }
 
   /*******  SEE ALL ******/
-  
-  .see-all{
+
+  .see-all {
     width: 87%;
   }
 }
 
 @media (max-width: 947px) {
-  
+
   /******* CATEGORIAS ******/
-  .scrolling-wrapper{
+  .scrolling-wrapper {
     width: 88%;
     gap: 20px;
   }
 
-  .box{
+  .box {
     width: 31%;
   }
 
-  .titles-page{
+  .titles-page {
     margin-top: 100px
   }
 
   /******* CATALOGUE ******/
 
-  .box-catalogue{
+  .box-catalogue {
     gap: 35px;
   }
 
-  .box-catalogue li{
+  .box-catalogue li {
 
     width: 253px;
     height: 340px;
     margin-bottom: 0px;
   }
 
-  .box-catalogue li figure{
+  .box-catalogue li figure {
 
     height: 80%;
   }
 
-  .box-catalogue li figcaption{
+  .box-catalogue li figcaption {
     @media (max-width: 991px) {
 
       /******* CATEGORIAS ******/
-      .scrolling-wrapper{
+      .scrolling-wrapper {
         width: 88%;
         gap: 30px;
       }
-    
-      .box{
+
+      .box {
         width: 31%;
       }
-    
-      .titles-page{
+
+      .titles-page {
         margin-top: 100px
       }
-    
+
       /******* CATALOGUE ******/
-    
-      .box-catalogue li{
-    
+
+      .box-catalogue li {
+
         width: 203px;
         height: 340px;
         margin-bottom: 0px;
       }
-    
-      .box-catalogue li figure{
-    
+
+      .box-catalogue li figure {
+
         height: 80%;
       }
-    
-      .box-catalogue li figcaption{
-    
+
+      .box-catalogue li figcaption {
+
         height: 20%;
       }
-    
-      .box-catalogue li figcaption h1{
-    
+
+      .box-catalogue li figcaption h1 {
+
         font-size: .9rem;
       }
-    
+
       /******* PAYMENTS ******/
-    
-      .payments div{
-    
+
+      .payments div {
+
         height: 150px;
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 0px;
       }
-      
-      .none-payment{
-        
+
+      .none-payment {
+
         display: none;
       }
-    
+
       /******* CARROSSEL ******/
-    
-      .carrossel li figcaption h1{
-    
+
+      .carrossel li figcaption h1 {
+
         font-size: .9rem;
       }
-    
+
       /*******  SEE ALL ******/
-      
-      .see-all{
+
+      .see-all {
         width: 87%;
       }
     }
+
     height: 20%;
   }
 
-  .box-catalogue li figcaption h1{
+  .box-catalogue li figcaption h1 {
 
     font-size: .9rem;
   }
 
   /******* PAYMENTS ******/
 
-  .payments div{
+  .payments div {
 
     height: 150px;
     display: flex;
@@ -1973,20 +1956,20 @@ footer i:hover {
     justify-content: center;
     padding: 0px;
   }
-  
-  .none-payment{
-    
+
+  .none-payment {
+
     display: none;
   }
 
   /******* CARROSSEL ******/
 
-  .carrossel li figcaption h1{
+  .carrossel li figcaption h1 {
 
     font-size: .8rem;
   }
 
-  .pay-contact div{
+  .pay-contact div {
 
     display: flex;
     justify-content: space-around;
@@ -1994,16 +1977,16 @@ footer i:hover {
   }
 
   /*******  SEE ALL ******/
-  
-  .see-all{
+
+  .see-all {
     width: 87%;
   }
 }
 
 @media (max-width: 690px) {
-  
+
   /******* CATEGORIAS ******/
-  .scrolling-wrapper{
+  .scrolling-wrapper {
     width: 88%;
     gap: 20px;
     height: 200px;
@@ -2017,45 +2000,45 @@ footer i:hover {
     margin-bottom: -30px;
   }
 
-  .scrolling-wrapper::-webkit-scrollbar{
+  .scrolling-wrapper::-webkit-scrollbar {
     display: none;
-  } 
+  }
 
-  .box{
+  .box {
     width: 31%;
     height: 100%;
   }
 
-  .titles-page{
+  .titles-page {
     margin-top: 100px
   }
 
   /******* CATALOGUE ******/
 
-  .box-catalogue{
+  .box-catalogue {
     gap: 20px;
   }
 
-  .box-catalogue li{
+  .box-catalogue li {
 
     width: 188px;
     height: 300px;
     margin-bottom: 0px;
   }
 
-  .box-catalogue li figure{
+  .box-catalogue li figure {
 
     height: 80%;
   }
 
-  .box-catalogue li figcaption h1{
+  .box-catalogue li figcaption h1 {
 
     font-size: .8rem;
   }
 
   /******* PAYMENTS ******/
 
-  .payments div{
+  .payments div {
 
     height: 150px;
     display: flex;
@@ -2064,8 +2047,8 @@ footer i:hover {
     padding: 0px;
   }
 
-  .payments div ul{
-    
+  .payments div ul {
+
     height: 100%;
     display: flex;
     flex-wrap: nowrap;
@@ -2073,25 +2056,25 @@ footer i:hover {
     gap: 20px;
   }
 
-  .payments div ul li{
+  .payments div ul li {
     padding: 0px;
     margin: 0px;
-    width:fit-content;
+    width: fit-content;
   }
 
-  .payments div ul li section p{
+  .payments div ul li section p {
 
     font-size: .7rem;
   }
 
   /******* CARROSSEL ******/
 
-  .carrossel li figcaption h1{
+  .carrossel li figcaption h1 {
 
     font-size: .8rem;
   }
 
-  .pay-contact div{
+  .pay-contact div {
 
     display: flex;
     justify-content: space-around;
@@ -2099,53 +2082,53 @@ footer i:hover {
   }
 
   /*******  SEE ALL ******/
-  
-  .see-all{
+
+  .see-all {
     width: 87%;
   }
 
 }
 
 @media (max-width: 500px) {
-  
+
   /******* CATALOGUE ******/
 
-  .box-catalogue{
+  .box-catalogue {
     gap: 20px;
   }
 
-  .box-catalogue li{
+  .box-catalogue li {
 
     width: 210px;
     height: 300px;
     margin-bottom: 0px;
   }
 
-  .box-catalogue li figure{
+  .box-catalogue li figure {
 
     height: 80%;
   }
 
-  .box-catalogue li figcaption h1{
+  .box-catalogue li figcaption h1 {
 
     font-size: .8rem;
   }
 
-  .catalogue-suport{
+  .catalogue-suport {
 
     display: none;
   }
 
   /******* PAYMENTS ******/
 
-  .payments div ul li section p{
+  .payments div ul li section p {
 
     font-size: .5rem;
   }
 
   /******* FOOTER ******/
 
-  footer{
+  footer {
 
     padding: 30px;
     display: flex;
@@ -2153,7 +2136,7 @@ footer i:hover {
   }
 
 
-  footer section{
+  footer section {
 
     display: flex;
     align-items: center;
@@ -2161,7 +2144,7 @@ footer i:hover {
   }
 
 
-  .media{
+  .media {
 
     display: flex;
     align-items: center;
@@ -2170,11 +2153,16 @@ footer i:hover {
     padding: 0px;
   }
 
-  .shop, .links, .contact{
+  .shop,
+  .links,
+  .contact {
     width: 25%;
     height: 300px;
   }
-  .shop a, .links a, .contact a{
+
+  .shop a,
+  .links a,
+  .contact a {
 
     font-size: .8rem;
   }
@@ -2184,7 +2172,7 @@ footer i:hover {
 
   /******* MENU ******/
 
-  .menu div h1{
+  .menu div h1 {
 
     font-size: 1.5rem;
   }
@@ -2192,56 +2180,56 @@ footer i:hover {
   /******* BANNER INITIAL ******/
 
   .search-banner h4,
-  .search-banner div{
+  .search-banner div {
 
     margin-left: -34px;
   }
 
-  .search-banner h4{
+  .search-banner h4 {
     font-size: 3rem;
     width: 100%;
   }
 
-  .search-banner div input{
+  .search-banner div input {
 
     width: 90%;
   }
-  
-  .frete p{
+
+  .frete p {
     font-size: 1rem;
   }
 
   /******* CATEGORIAS ******/
-  .scrolling-wrapper{
+  .scrolling-wrapper {
     left: 18px;
   }
 
   /******* CATALOGUE ******/
 
-  .box-catalogue{
+  .box-catalogue {
     gap: 20px;
   }
 
-  .box-catalogue li{
+  .box-catalogue li {
 
     width: 192px;
     height: 300px;
     margin-bottom: 0px;
   }
 
-  .box-catalogue li figure{
+  .box-catalogue li figure {
 
     height: 80%;
   }
 
-  .box-catalogue li figcaption h1{
+  .box-catalogue li figcaption h1 {
 
     font-size: .8rem;
   }
 
   /******* PAYMENTS ******/
 
-  .payments div{
+  .payments div {
 
     height: 150px;
     display: flex;
@@ -2250,8 +2238,8 @@ footer i:hover {
     padding: 0px;
   }
 
-  .payments div ul{
-    
+  .payments div ul {
+
     height: 100%;
     display: flex;
     flex-wrap: nowrap;
@@ -2259,25 +2247,25 @@ footer i:hover {
     gap: 20px;
   }
 
-  .payments div ul li{
+  .payments div ul li {
     padding: 0px;
     margin: 0px;
-    width:fit-content;
+    width: fit-content;
   }
 
-  .payments div ul li section p{
+  .payments div ul li section p {
 
     display: none;
   }
 
   /******* CARROSSEL ******/
 
-  .carrossel li figcaption h1{
+  .carrossel li figcaption h1 {
 
     font-size: .8rem;
   }
 
-  .pay-contact div{
+  .pay-contact div {
 
     display: flex;
     justify-content: space-around;
@@ -2285,8 +2273,8 @@ footer i:hover {
   }
 
   /*******  SEE ALL ******/
-  
-  .see-all{
+
+  .see-all {
     width: 87%;
   }
 
