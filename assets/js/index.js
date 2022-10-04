@@ -190,7 +190,7 @@ const sair = () => {
   window.location.href = ''
 }
 
-// SE O USUARIO TIVER LOGADO, MOSTRE O INPUT DE SAIR , PARA PODER SAIR DA CONTA
+// SE O USUARIO TIVER LOGADO, MOSTRE O INPUT DE SAIR , PARA PODER SAIR DA CONTA.
 
 $(document).ready(() => {
   let texto = localStorage.getItem('userLogado') ? "<li onclick='sair()'><p> sair </p></li>" : ''
