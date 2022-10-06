@@ -39,31 +39,25 @@
 
   <!------ MENU ------->
   <header>
-
     <nav class="menu">
-
       <div style="justify-content: left;">
         <h1><b>E</b>-Ecommerce</h1>
       </div>
-
       <ul>
-        <li id="active-link-menu">Home</li>
-        <li>Produtos</li>
-        <li>Sobre-nós</li>
-        <li>Contatos</li>
+          <li id="active-link-menu"><a href="/index.html">Home</a></li>
+          <li><a href="/produtos.html">Produtos</a></li>
+          <li><a href="/sobre.html">Sobre-nós</a></li>
+          <li><a href="/contacto.html">Contatos</a></li>
       </ul>
       <div>
 
-
         <!---- SCROLL ABRE FECHA CARRINHO ---->
         <div class="config">
-          <a><i class="fas fa-shopping-bag" id="cart-btn"></i>
-
+          <a>
+            <i class="fas fa-shopping-bag" id="cart-btn"></i>
             <!-- Total de itens na sacolinha do carrinho -->
             <p id="cont-itens-carrinho" class="sacolinhaDark"></p>
-
           </a>
-
         </div>
 
         <!-- SISTEMA DE CARRINHO -->
@@ -82,29 +76,20 @@
                 <p>Preço</p>
               </div>
             </section>
-
             <div class="cart-item">
 
             </div>
-
-
             <span id="totalFinal" class="total">
               <h2> Nenhum item escolhido </h2>
             </span>
-
-
-
             <button id="btnFinalizarCarrinho">
               <h2>Comprar</h2>
             </button>
           </section>
-
         </div>
 
         <!-- Email do usuario CONFIG -->
-        <span id="user-email">
-
-        </span>
+        <span id="user-email"></span>
 
         <!---- OPEN CONFIG ---->
 
@@ -114,24 +99,17 @@
           </button>
         </div>
 
-
         <div id="openConfig" class="btn-config">
-
-
           <ul id="ul-OpenConfig">
-
             <li>
               <p>Minha Conta</p>
             </li>
-
             <li>
               <p>Pagamentos</p>
             </li>
-
             <li>
               <p>Direitos</p>
             </li>
-
 
             <div class="ul-OpenConfig">
               <input type="checkbox" name="chenge-theme" id="chenge-theme" />
@@ -156,81 +134,65 @@
 
             <span id='li-sair'></span>
           </ul>
-
         </div>
-
       </div>
-
     </nav>
-
   </header>
 
   <!-------- BANNER INICIAL -------->
   <main class="banner-initial">
     <figure>
       <div class="search-banner">
-
         <h4>
           Receba o melhor produto em sua casa
         </h4>
-
         <div>
           <input type="search" placeholder="Buscar produtos, marcas e muito mais...">
           <i class="fas fa-search"></i>
         </div>
-
         <div class="frete">
           <p>Frete Grátis em compras acima de <b>R$ 129,99</b></p>
         </div>
       </div>
-
     </figure>
   </main>
 
   <!---------- CATEGORIAS ---------->
   <section class="categories">
-
     <div class="titles-page">
       <h5>Navegue entre as categorias</h5>
     </div>
-
     <div class="scrolling-wrapper">
-
       <div class="box">
         <div>
           <i class="fa-solid fa-shirt"></i>
         </div>
         <p>Moda</p>
       </div>
-
       <div class="box">
         <div>
           <i class="fa-solid fa-volleyball"></i>
         </div>
         <p>Esportes</p>
       </div>
-
       <div class="box">
         <div>
           <i class="fa-solid fa-mug-saucer"></i>
         </div>
         <p>Casa</p>
       </div>
-
       <div class="box">
         <div>
           <i class="fa-solid fa-headphones-simple"></i>
         </div>
         <p>Eletrônicos</p>
       </div>
-
       <div class="box">
         <div>
           <i class="fa-solid fa-chair"></i>
         </div>
         <p>Móveis</p>
       </div>
-
       <div class="box">
         <div>
           <i class="fa-solid fa-dog"></i>
@@ -835,62 +797,56 @@
 
   <!-------------- FOOTER ---------------->
   <footer>
-
-    <div class="media">
-
-      <div class="media-title">
-        <a href="">
-          <h2><b>E</b>-Ecommerce</h2>
-        </a>
+    <div class="menu-footer">
+      <div class="media">
+        <div class="media-title">
+          <a href="">
+            <h2><b>E</b>-Ecommerce</h2>
+          </a>
+        </div>
+  
+        <div class="social-media">
+          <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </div>
       </div>
-
-      <div class="social-media">
-
-        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-        <a href=""><i class="fa-brands fa-instagram"></i></a>
-        <a href=""><i class="fa-brands fa-twitter"></i></a>
-
-      </div>
-
-      <a class="copyrigth">
-        <p>© 2022 Dev Project. Todos os direitos reservados.</p>
-        <p>Termos, acordos e Política de Privacidade.</p>
-      </a>
-
+      <section>
+        <div class="shop">
+          <h3>Shop</h3>
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Location</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+  
+        <div class="links">
+          <h3>Links</h3>
+          <ul>
+            <li><a href="#">Eletronics</a></li>
+            <li><a href="#">Summer</a></li>
+            <li><a href="#">Book</a></li>
+            <li><a href="#">Cosmetics</a></li>
+            <li><a href="#">Furnitures</a></li>
+          </ul>
+        </div>
+  
+        <div class="contact">
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="tel:+551234567890">+55 12 3456 7890</a></li>
+            <li><a href="mailto:e-ecommerce@gmail.com">e-ecommerce@gmail.com</a></li>
+            <li><a href="#">Rua Principal, 123. Cidade - ET</a></li>
+          </ul>
+        </div>
+      </section>
     </div>
-
-    <section>
-      <div class="shop">
-        <h3>Shop</h3>
-        <ul>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Location</a></li>
-          <li><a href="#">FAQ</a></li>
-        </ul>
-      </div>
-
-      <div class="links">
-        <h3>Links</h3>
-        <ul>
-          <li><a href="#">Eletronics</a></li>
-          <li><a href="#">Summer</a></li>
-          <li><a href="#">Book</a></li>
-          <li><a href="#">Cosmetics</a></li>
-          <li><a href="#">Furnitures</a></li>
-        </ul>
-      </div>
-
-      <div class="contact">
-        <h3>Contact</h3>
-        <ul>
-          <li><a href="tel:+551234567890">+55 12 3456 7890</a></li>
-          <li><a href="mailto:e-ecommerce@gmail.com">e-ecommerce@gmail.com</a></li>
-          <li><a href="#">Rua Principal, 123. Cidade - ET</a></li>
-        </ul>
-      </div>
-    </section>
-
+    <div class="copyright">
+      <p>Termos, acordos e Política de Privacidade.</p>
+      <p>© 2022 Dev Project. Todos os direitos reservados.</p>
+    </div>
   </footer>
 
   <!-------------- SCRIPT SLICK JS ------------------->

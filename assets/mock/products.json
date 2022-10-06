@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "name": "Apple iPhone 11",
+        "price": 331999,
+        "img": "iphone.png"
+    },
+    {
+        "id": 2,
+        "name": "Controle Xbox",
+        "price": 29000,
+        "img": "console.png"
+    },
+    {
+        "id": 3,
+        "name": "Headset Gamer",
+        "price": 34999,
+        "img": "headphone1.png"
+    },
+    {
+        "id": 4,
+        "name": "Air Jordan",
+        "price": 32999,
+        "img": "nike-jordan.png"
+    },
+    {
+        "id": 5,
+        "name": "Xiaomi Mi Band",
+        "price": 16999,
+        "img": "relógio.png"
+    },
+    {
+        "id": 6,
+        "name": "Nutriwhey",
+        "price": 4849,
+        "img": "whey.png"
+    },
+    {
+        "id": 7,
+        "name": "Slant Summer",
+        "price": 13119,
+        "img": "tenis-masc.png"
+    },
+    {
+        "id": 8,
+        "name": "Philco Smart TV",
+        "price": 139900,
+        "img": "Philco-Tv.png"
+    },
+    {
+        "id": 9,
+        "name": "Mouse Ultra Electro",
+        "price": 30099,
+        "img": "mouse.png"
+    },
+    {
+        "id": 10,
+        "name": "Alexa Echo Dot",
+        "price": 37905,
+        "img": "alexa.png"
+    },
+    {
+        "id": 11,
+        "name": "Tablet X-Ultra",
+        "price": 255099,
+        "img": "wall.png"
+    }
+]
