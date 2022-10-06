@@ -26,27 +26,23 @@
 /************ SCROLL BARRA ************/
 
 ::-webkit-scrollbar {
-
-  width: 7px;
-  padding: 20px;
+  width: .6rem;
 }
 
 ::-webkit-scrollbar-track {
-
-  background-color: var(--secundary-background);
+  background-color: #1d1e20;
 }
 
 ::-webkit-scrollbar-thumb {
-
+  border-radius: .5rem;
+  min-height: 100px;
   background-color: var(--important-color);
-  width: 10px;
-  padding: 0px;
+  transition: 0.4s ease-in-out;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-
-  transition: 0.5s;
-  background-color: var(--primary-color);
+  cursor: pointer;
+  background-color: #8f151f;
 }
 
 /***** LIGHT AND DARK *****/
@@ -64,7 +60,6 @@ input[type="checkbox"] {
 }
 
 #minhaDiv {
-
   display: none;
 }
 
@@ -142,7 +137,7 @@ input[type="checkbox"] {
   background-color: var(--third-back-darck);
 }
 
-.dark .menu ul li,
+.dark .menu ul li a,
 .dark .menu div h1,
 .dark .menu div i {
 
@@ -216,7 +211,11 @@ input[type="checkbox"] {
   color: var(--important-color);
 }
 
-.dark .copyrigth p {
+.dark .copyright{
+  border-top: 1px solid var(--secundary-background);
+}
+
+.dark .copyright p {
   color: var(--secundary-color);
 }
 
@@ -303,12 +302,11 @@ input[type="checkbox"] {
 
 /***** RESET PAGE *****/
 * {
-
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   list-style: none;
   text-decoration: none;
-  box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   color: var(--primary-color);
 }
@@ -349,14 +347,11 @@ body {
 
 header {
   margin-bottom: 30px;
-
 }
 
 .menu {
-
   background-color: var(--background-color);
   width: 100%;
-  /* height: 100px; */
   position: fixed;
   z-index: 9;
   top: 0;
@@ -365,7 +360,7 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 6px 0;
+  padding: 20px 0;
   transition: .5s;
 }
 
@@ -377,9 +372,7 @@ header {
   gap: 10px;
 }
 
-
-.menu ul li {
-
+.menu ul li a{
   padding: 10px 20px;
   border-radius: 5px;
   font-weight: 700;
@@ -388,21 +381,18 @@ header {
   transition: .5s;
 }
 
-.menu ul li:hover {
-
+.menu ul li:hover a{
   color: var(--background-color);
   background-color: var(--important-color);
   cursor: pointer;
 }
 
-#active-link-menu {
-
+#active-link-menu a{
   color: var(--background-color);
   background-color: var(--important-color);
 }
 
 .menu div {
-
   display: flex;
   align-items: center;
   justify-content: right;
@@ -1270,15 +1260,81 @@ header {
 
 footer {
   border-top: 1px solid var(--secundary-color);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 40px 120px;
+  padding: 40px 120px 0;
   background-color: var(--secundary-background);
 }
 
-footer>div {
-  margin: 10px 20px;
+footer .menu-footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+footer section{
+  flex: 1;
+  max-width: 700px;
+  justify-self: flex-end;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: .8rem;
+}
+
+footer section > div{
+  flex: 1;
+}
+
+.social-media {
+  margin-top: 30px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.social-media a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secundary-back-darck);
+  transition: .3s ease-in-out;
+}
+
+.social-media a i {
+  color: var(--background-color);
+  transition: .3s ease-in-out;
+}
+
+.social-media a:hover {
+  background-color: var(--important-color);
+}
+
+.social-media a:hover i {
+
+  color: var(--background-color);
+  font-size: 1.3rem;
+  transition: .5s;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 30px;
+  padding: 30px 0;
+  border-top: 1px solid var(--secundary-back-darck);
+  width: 100%;
+  display: block;
+}
+
+.copyright p {
+  font-size: 1rem;
+}
+
+.copyright p + p{
+  margin-top: 6px;
 }
 
 footer h2 {
@@ -1321,53 +1377,6 @@ footer i:hover {
   cursor: pointer;
   color: var(--important-color);
 }
-
-.social-media {
-  margin-top: 30px;
-  gap: 10px;
-  display: flex;
-  align-items: center;
-}
-
-
-.social-media a {
-
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--secundary-back-darck);
-}
-
-.social-media a i {
-  color: var(--background-color);
-}
-
-.social-media a:hover {
-  background-color: var(--important-color);
-  box-shadow: 0px 0px 10px 0px var(--important-color);
-}
-
-.social-media a:hover i {
-
-  color: var(--background-color);
-  font-size: 1.3rem;
-  transform: rotate(10deg);
-  transition: .5s;
-}
-
-.copyrigth {
-
-  margin-top: 40px;
-}
-
-.copyrigth p {
-
-  font-size: .8rem;
-}
-
 /***************************/
 /******  WINDOW LOGIN ******/
 /***************************/
