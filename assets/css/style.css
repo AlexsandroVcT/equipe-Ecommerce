@@ -372,6 +372,15 @@ header {
   gap: 10px;
 }
 
+.menu ul li{
+ padding: 10px 20px;
+ border-radius: 5px;
+ font-weight: 700;
+ font-size: 1rem;
+ text-transform: uppercase;
+ transition: .5s;
+}
+
 .menu ul li a{
   padding: 10px 20px;
   border-radius: 5px;
