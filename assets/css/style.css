@@ -390,6 +390,12 @@ header {
   transition: .5s;
 }
 
+.menu ul li:hover{
+  color: var(--background-color);
+  background-color: var(--important-color);
+  cursor: pointer;
+}
+
 .menu ul li:hover a{
   color: var(--background-color);
   background-color: var(--important-color);
