@@ -339,6 +339,27 @@ header {
   transition: .5s;
 }
 
+.menu ul li a {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: .5s;
+}
+
+.menu ul li:hover {
+  color: var(--background-color);
+  background-color: var(--important-color);
+  cursor: pointer;
+}
+
+.menu ul li:hover a {
+  color: var(--background-color);
+  background-color: var(--important-color);
+  cursor: pointer;
+}
+
 #active-link-menu a {
   color: var(--background-color);
   background-color: var(--important-color);
