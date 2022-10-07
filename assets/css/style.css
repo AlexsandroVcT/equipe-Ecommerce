@@ -330,6 +330,15 @@ header {
   gap: 10px;
 }
 
+.menu ul li {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: .5s;
+}
+
 #active-link-menu a {
   color: var(--background-color);
   background-color: var(--important-color);
@@ -602,7 +611,7 @@ header {
   box-shadow: 0px 0px 10px 0px var(--important-color);
   border-radius: 5px;
   margin: 60px 0px;
-  
+
 }
 
 .titles-page h5 {
@@ -1135,7 +1144,7 @@ footer section {
   gap: 0.8rem;
 }
 
-footer section > div {
+footer section>div {
   flex: 1;
 }
 
@@ -1185,7 +1194,7 @@ footer section > div {
   font-size: 1rem;
 }
 
-.copyright p + p {
+.copyright p+p {
   margin-top: 6px;
 }
 
@@ -1224,6 +1233,7 @@ footer i:hover {
   cursor: pointer;
   color: var(--important-color);
 }
+
 /***************************/
 /******  WINDOW LOGIN ******/
 /***************************/
@@ -1454,6 +1464,7 @@ footer i:hover {
 /************** RESPONSIVIDADE ****************/
 
 @media (max-width: 1250px) {
+
   /******* BANNER HOME ******/
   .banner-initial figure {
     width: 100%;
@@ -1507,6 +1518,7 @@ footer i:hover {
 }
 
 @media (max-width: 1104px) {
+
   /******* CATEGORIAS ******/
   .scrolling-wrapper {
     width: 88%;
@@ -1570,6 +1582,7 @@ footer i:hover {
 }
 
 @media (max-width: 991px) {
+
   /******* CATEGORIAS ******/
   .scrolling-wrapper {
     width: 88%;
@@ -1632,6 +1645,7 @@ footer i:hover {
 }
 
 @media (max-width: 947px) {
+
   /******* CATEGORIAS ******/
   .scrolling-wrapper {
     width: 88%;
@@ -1663,6 +1677,7 @@ footer i:hover {
   }
 
   @media (max-width: 991px) {
+
     /******* CATEGORIAS ******/
     .scrolling-wrapper {
       width: 88%;
@@ -1723,6 +1738,7 @@ footer i:hover {
       width: 87%;
     }
   }
+
   .box-catalogue li figcaption {
     height: 20%;
   }
@@ -1764,6 +1780,7 @@ footer i:hover {
 }
 
 @media (max-width: 690px) {
+
   /******* CATEGORIAS ******/
   .scrolling-wrapper {
     width: 88%;
@@ -2021,3 +2038,4 @@ footer i:hover {
   .see-all {
     width: 87%;
   }
+}
