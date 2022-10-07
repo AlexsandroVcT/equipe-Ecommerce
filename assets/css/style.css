@@ -330,21 +330,6 @@ header {
   gap: 10px;
 }
 
-.menu ul li a {
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-weight: 700;
-  font-size: 1rem;
-  text-transform: uppercase;
-  transition: 0.5s;
-}
-
-.menu ul li:hover a {
-  color: var(--background-color);
-  background-color: var(--important-color);
-  cursor: pointer;
-}
-
 #active-link-menu a {
   color: var(--background-color);
   background-color: var(--important-color);
@@ -609,13 +594,15 @@ header {
 .titles-page {
   width: 84%;
   height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   background-color: var(--important-color);
   box-shadow: 0px 0px 10px 0px var(--important-color);
   border-radius: 5px;
-  display: flex;
   margin: 60px 0px;
-  justify-content: center;
-  flex-direction: column;
+  
 }
 
 .titles-page h5 {
@@ -2034,4 +2021,3 @@ footer i:hover {
   .see-all {
     width: 87%;
   }
-}
