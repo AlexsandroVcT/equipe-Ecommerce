@@ -1,10 +1,9 @@
 /***** GOOGLE FONTS *****/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 /***** ROOT *****/
 
 :root {
-
   --primary-color: #383838;
   --secundary-color: #b5b5b5;
   --important-color: #e63946;
@@ -26,7 +25,7 @@
 /************ SCROLL BARRA ************/
 
 ::-webkit-scrollbar {
-  width: .6rem;
+  width: 0.6rem;
 }
 
 ::-webkit-scrollbar-track {
@@ -34,7 +33,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   min-height: 100px;
   background-color: var(--important-color);
   transition: 0.4s ease-in-out;
@@ -68,7 +67,7 @@ input[type="checkbox"] {
 .dark {
   background-color: var(--back-darck);
   color: #fff;
-  transition: .5s all;
+  transition: 0.5s all;
 }
 
 .dark .bi-sun {
@@ -84,13 +83,11 @@ input[type="checkbox"] {
 }
 
 .dark .carrossel figcaption h1 {
-
   color: var(--background-color);
 }
 
 .dark .carrossel figure,
 .dark .carrossel figcaption {
-
   background-color: var(--secundary-back-darck);
 }
 
@@ -107,14 +104,11 @@ input[type="checkbox"] {
 }
 
 .dark .buttons-arrows button {
-
   background-color: var(--secundary-back-darck);
   box-shadow: 0px 0px 10px 0px #000;
-
 }
 
 .dark .titles-page h5 {
-
   color: var(--background-color);
 }
 
@@ -124,12 +118,10 @@ input[type="checkbox"] {
 }
 
 .dark .see-all h5 {
-
   color: var(--background-color);
 }
 
 .dark .see-all p {
-
   color: var(--secundary-background);
 }
 
@@ -140,29 +132,22 @@ input[type="checkbox"] {
 .dark .menu ul li a,
 .dark .menu div h1,
 .dark .menu div i {
-
   color: var(--background-color);
-
 }
 
 .dark .menu-scroll {
-
   background-color: #000;
   box-shadow: 0px 0px 10px 0px #000;
 }
 
-
 .menu div a:hover,
 .dark .menu div a:hover {
-
   cursor: pointer;
   background-color: var(--button-color);
 }
 
-
-
 .dark .menu div a:hover {
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .dark .menu i {
@@ -178,19 +163,16 @@ input[type="checkbox"] {
 }
 
 .dark .btn-config li i {
-
   color: var(--back-darck);
 }
 
 .dark .btn-config li p {
-
   color: var(--background-color);
 }
 
 /** FOOTER dark **/
 
 .dark footer {
-
   background-color: var(--secundary-back-darck);
   border-top: 1px solid var(--secundary-back-darck);
 }
@@ -202,7 +184,6 @@ input[type="checkbox"] {
 }
 
 .dark .social-media a {
-
   background-color: var(--back-darck);
 }
 
@@ -211,7 +192,7 @@ input[type="checkbox"] {
   color: var(--important-color);
 }
 
-.dark .copyright{
+.dark .copyright {
   border-top: 1px solid var(--secundary-background);
 }
 
@@ -220,7 +201,7 @@ input[type="checkbox"] {
 }
 
 .dark footer h2:hover b {
-  transition: .5s;
+  transition: 0.5s;
   color: var(--background-color);
 }
 
@@ -233,7 +214,6 @@ input[type="checkbox"] {
 /** payments dark **/
 
 .dark .payments div {
-
   background-color: var(--secundary-back-darck);
 }
 
@@ -244,39 +224,32 @@ input[type="checkbox"] {
 
 .dark .payments section h1,
 .dark .payments ul li h3 {
-
   color: var(--background-color);
 }
 
 /** payments dark **/
 
 .dark .login-container {
-
-  background-color: var(--back-darck)
+  background-color: var(--back-darck);
 }
 
 .dark .login-sign-in {
-
   background-color: va690r(--secundary-back-darck);
 }
 
 .dark .login-sign-in h1 {
-
   color: var(--background-color);
 }
 
 .dark .login-sign-in section p {
-
   color: var(--secundary-background);
 }
 
 .dark .login-sign-in button {
-
   color: var(--background-color);
 }
 
 .dark .login-sign-in input {
-
   background-color: var(--back-darck);
   outline: var(--back-darck);
   color: var(--background-color);
@@ -287,7 +260,6 @@ input[type="checkbox"] {
 }
 
 .dark .login-sign-in input:focus {
-
   outline: 1px solid var(--important-color);
   box-shadow: 0px 0px 5px 0px var(--third-back-darck);
 }
@@ -300,28 +272,15 @@ input[type="checkbox"] {
   color: #1b1b1b;
 }
 
-/***** RESET PAGE *****/
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-  font-family: 'Poppins', sans-serif;
-  color: var(--primary-color);
-}
-
 /***** BODY *****/
 
 body {
-
   background-color: var(--background-color);
 }
 
 /***** BUTTONS ALL *****/
 
 .btn-all {
-
   width: 150px;
   height: 50px;
   display: flex;
@@ -333,12 +292,11 @@ body {
   font-weight: 800;
   border: var(--important-color) 2px solid;
   cursor: pointer;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .btn-all:hover {
-
-  transition: .5s;
+  transition: 0.5s;
   box-shadow: 0px 100px 0px 0px inset var(--important-color);
   color: var(--background-color);
 }
@@ -361,7 +319,7 @@ header {
   justify-content: center;
   align-items: center;
   padding: 20px 0;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .menu ul {
@@ -372,37 +330,7 @@ header {
   gap: 10px;
 }
 
-.menu ul li{
- padding: 10px 20px;
- border-radius: 5px;
- font-weight: 700;
- font-size: 1rem;
- text-transform: uppercase;
- transition: .5s;
-}
-
-.menu ul li a{
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-weight: 700;
-  font-size: 1rem;
-  text-transform: uppercase;
-  transition: .5s;
-}
-
-.menu ul li:hover{
-  color: var(--background-color);
-  background-color: var(--important-color);
-  cursor: pointer;
-}
-
-.menu ul li:hover a{
-  color: var(--background-color);
-  background-color: var(--important-color);
-  cursor: pointer;
-}
-
-#active-link-menu a{
+#active-link-menu a {
   color: var(--background-color);
   background-color: var(--important-color);
 }
@@ -416,30 +344,24 @@ header {
 }
 
 .menu div h1 {
-
-  transition: .5s;
+  transition: 0.5s;
   cursor: pointer;
   font-size: 1.7rem;
 }
 
 .menu div h1 b {
-
   color: var(--important-color);
-
 }
 
 .menu div h1:hover {
-
   color: var(--important-color);
 }
 
 .menu div h1:hover b {
-
   color: var(--primary-color);
 }
 
 .menu div a {
-
   border-radius: 50px;
   width: 40px;
   height: 40px;
@@ -450,9 +372,8 @@ header {
 }
 
 .menu div i {
-
   font-size: 1.1rem;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .menu div a:hover i {
@@ -462,44 +383,37 @@ header {
   opacity: 1;
   /* color: var(--primary-color); */
   /* transform: rotate(10deg); */
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .menu-scroll {
-
   height: 80px;
   background-color: var(--secundary-background);
   box-shadow: 0px 0px 10px 0px var(--primary-color);
 }
 
 .menu-scroll #openConfig {
-
   top: 80px;
   height: 90vh;
 }
 
 @media all and (max-width: 859px) {
-
   .menu ul {
-
     display: none;
   }
 
   .menu div {
     width: 42%;
-
   }
 }
 
 .config button {
-
   background: none;
   border: none;
 }
 
 #openBag,
 #openConfig {
-
   width: 100%;
   height: 87vh;
   position: absolute;
@@ -510,14 +424,12 @@ header {
 
 .menu-scroll #openBag,
 .menu-scroll #openConfig {
-
   top: 80px;
   height: 90vh;
 }
 
 .btn-bag-open,
 .btn-config {
-
   width: 100%;
   height: 100%;
   display: flex;
@@ -530,7 +442,6 @@ header {
 
 .btn-bag-open header,
 .btn-config ul {
-
   position: absolute;
   top: 0px;
   right: 0px;
@@ -543,7 +454,6 @@ header {
 }
 
 .btn-config ul {
-
   display: flex;
   padding-top: 30px;
   justify-content: flex-start;
@@ -552,7 +462,6 @@ header {
 
 .btn-config ul li,
 .btn-config ul div {
-
   width: 90%;
   background-color: var(--background-color);
   display: flex;
@@ -562,46 +471,39 @@ header {
 
 .btn-config ul li:hover p,
 .btn-config ul li:hover i {
-  transition: .3s;
+  transition: 0.3s;
   color: var(--background-color);
 }
 
 #btn-theme i p {
-
   position: absolute;
   top: 21%;
   right: 60px;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 #btn-theme {
-
   width: 22.5rem;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 @keyframes animateBag {
   0% {
-
     opacity: 0;
-
   }
 
   100% {
-
     opacity: 1;
-
   }
 }
 
 /***** BANNER *****/
 
 .banner-initial {
-
   width: 100%;
   height: 100vh;
   display: flex;
@@ -618,16 +520,14 @@ header {
   background-position: center;
   background-size: cover;
   box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.473);
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .banner-initial figure:hover {
   box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.555);
-
 }
 
 .search-banner {
-
   width: 100%;
   height: 100%;
   background-color: #15151570;
@@ -635,11 +535,9 @@ header {
   flex-direction: column;
   justify-content: center;
   padding-left: 70px;
-
 }
 
 .search-banner h4 {
-
   font-size: 3rem;
   line-height: 50px;
   margin-bottom: 30px;
@@ -647,7 +545,6 @@ header {
 }
 
 .search-banner div {
-
   position: relative;
   display: flex;
   flex-direction: column;
@@ -655,7 +552,6 @@ header {
 }
 
 .search-banner input {
-
   width: 50%;
   height: 60px;
   position: relative;
@@ -671,37 +567,31 @@ header {
   outline: none;
   border-radius: 50px;
   padding: 0px 70px;
-
 }
 
 .search-banner input:focus {
-
   box-shadow: #000 0px 0px 10px 0px;
 }
 
 .search-banner input:focus::placeholder {
-
   padding-left: 10px;
   opacity: 0;
-  transition: .5s;
+  transition: 0.5s;
   font-style: italic;
 }
 
 .search-banner i {
-
   position: absolute;
   left: 15px;
   color: #151515;
-  opacity: .3;
+  opacity: 0.3;
   font-size: 1.4rem;
   padding: 0px 10px;
 }
 
-
 /***** TÍTULOS *****/
 
 .titles-page {
-
   width: 84%;
   height: 40px;
   display: flex;
@@ -716,7 +606,6 @@ header {
 }
 
 .titles-page h5 {
-
   font-size: 1.2rem;
   text-transform: uppercase;
   margin-left: 20px;
@@ -735,7 +624,6 @@ header {
 }
 
 .titles-page h5 {
-
   font-size: 1.2rem;
   text-transform: uppercase;
   margin-left: 20px;
@@ -745,16 +633,13 @@ header {
 /******* CATEGORIAS *******/
 
 .categories {
-
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 100%;
-
 }
 
 .box {
-
   min-width: 170px;
   height: 190px;
   display: flex;
@@ -767,7 +652,6 @@ header {
 }
 
 .box div {
-
   min-width: 130px;
   height: 130px;
   border-radius: 50%;
@@ -778,13 +662,11 @@ header {
 }
 
 .box div i {
-
   font-size: 2.5rem;
   color: var(--important-color);
 }
 
 .scrolling-wrapper {
-
   width: 84%;
   display: flex;
   justify-content: space-between;
@@ -795,7 +677,6 @@ header {
 /***** CATALOGUE INITIAL *****/
 
 .catalogue-initial {
-
   width: 100%;
   display: flex;
   align-items: center;
@@ -803,9 +684,7 @@ header {
   flex-direction: column;
 }
 
-
 .box-catalogue {
-
   width: 84%;
   display: flex;
   flex-wrap: wrap;
@@ -813,14 +692,12 @@ header {
 }
 
 .box-catalogue li {
-
   width: 268.5px;
   height: 420px;
   margin: 20px 0px;
 }
 
 .box-catalogue figure {
-
   width: 100%;
   height: 83%;
   border-top-left-radius: 10px;
@@ -833,7 +710,6 @@ header {
 }
 
 .box-catalogue figure img {
-
   width: 60%;
 }
 
@@ -842,7 +718,6 @@ header {
 }
 
 .box-catalogue figcaption {
-
   width: 100%;
   height: 17%;
   margin-top: 2px;
@@ -855,7 +730,6 @@ header {
 }
 
 .box-catalogue figcaption div {
-
   width: 70%;
   height: 100%;
   display: flex;
@@ -866,20 +740,17 @@ header {
 }
 
 .box-catalogue figcaption div h1 {
-
   font-size: 1rem;
   color: var(--primary-color);
 }
 
 .box-catalogue figcaption div h4 {
-
   font-size: 1.1rem;
   font-weight: 800;
   color: var(--important-color);
 }
 
 .box-catalogue figcaption section {
-
   width: 30%;
   height: 100%;
   display: flex;
@@ -891,7 +762,6 @@ header {
 
 .box-catalogue li .fa-heart,
 .carrossel li .fa-heart {
-
   display: none;
   position: absolute;
   right: 20px;
@@ -908,14 +778,12 @@ header {
 }
 
 .box-catalogue figcaption section i {
-
   font-size: 1.4rem;
 }
 
 /***** PRODUCTS *****/
 
 .products {
-
   width: 100%;
   display: flex;
   align-items: center;
@@ -924,7 +792,6 @@ header {
 }
 
 .box-products {
-
   width: 85%;
   display: flex;
   align-items: center;
@@ -934,18 +801,15 @@ header {
 
 .box-products:hover .buttons-arrows {
   display: flex;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .carrossel {
-
   width: 100%;
   display: flex;
-
 }
 
 .carrossel li {
-
   width: 300px;
   height: 450px;
   display: flex;
@@ -954,17 +818,15 @@ header {
   position: relative;
   cursor: pointer;
   transition: 0.5s;
-
 }
 
 .carrossel li:hover,
 .box-catalogue li:hover {
-  transition: .3s;
+  transition: 0.3s;
   transform: scale(1.04);
 }
 
 .carrossel figure {
-
   width: 100%;
   height: 83%;
   border-top-left-radius: 10px;
@@ -976,7 +838,6 @@ header {
 }
 
 .carrossel figure img {
-
   width: 60%;
   cursor: pointer;
 }
@@ -986,7 +847,6 @@ header {
 }
 
 .carrossel figcaption {
-
   width: 100%;
   height: 17%;
   margin-top: 2px;
@@ -999,7 +859,6 @@ header {
 }
 
 .carrossel figcaption div {
-
   width: 70%;
   height: 100%;
   display: flex;
@@ -1010,19 +869,16 @@ header {
 }
 
 .carrossel figcaption div h1 {
-
   font-size: 1rem;
   color: var(--primary-color);
 }
 
 .carrossel figcaption div h4 {
-
   font-size: 1.4rem;
   color: var(--important-color);
 }
 
 .carrossel figcaption section {
-
   width: 30%;
   height: 100%;
   display: flex;
@@ -1032,7 +888,6 @@ header {
 }
 
 .carrossel figcaption section i {
-
   font-size: 1.4rem;
 }
 
@@ -1048,9 +903,7 @@ header {
 
 /*** CARROSSEL ARROWS ***/
 
-
 .buttons-arrows {
-
   width: 102%;
   height: 100px;
   position: absolute;
@@ -1061,7 +914,6 @@ header {
 }
 
 .buttons-arrows p {
-
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -1083,14 +935,12 @@ header {
 }
 
 .buttons-arrows button:hover {
-
   background-color: var(--important-color);
   box-shadow: 0px 0px 20px 0px #27272740;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .buttons-arrows button:hover i {
-
   color: var(--background-color);
 }
 
@@ -1106,13 +956,11 @@ header {
 }
 
 .payments section h1 {
-
   font-size: 1.2rem;
   margin-bottom: 4px;
 }
 
 .payments div {
-
   width: 84%;
   padding: 50px 40px;
   background-color: var(--secundary-background);
@@ -1127,12 +975,11 @@ header {
 }
 
 .payments div:hover {
-  transition: .5s;
+  transition: 0.5s;
   box-shadow: var(--box-shadow-contents-hover);
 }
 
 .payments div ul {
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1141,7 +988,6 @@ header {
 }
 
 .payments div ul li {
-
   width: 200px;
   height: 100px;
   display: flex;
@@ -1157,19 +1003,16 @@ header {
 }
 
 .payments div ul li h3 {
-
   font-size: 1rem;
   text-transform: uppercase;
   margin: 0px;
 }
 
 .payments div ul li p {
-
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .pay-contact div {
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1178,7 +1021,6 @@ header {
 
 /***** FRETE *****/
 .frete {
-
   height: 100px;
   display: flex;
   justify-content: center;
@@ -1192,7 +1034,6 @@ header {
 }
 
 .frete p b {
-
   font-size: 1.4rem;
   color: var(--background-color);
   text-shadow: 0px 0px 4px #000;
@@ -1237,11 +1078,9 @@ header {
 }
 
 .see-all:hover {
-
   cursor: pointer;
-  transition: .5s;
+  transition: 0.5s;
   box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.363);
-
 }
 
 .see-all-left {
@@ -1269,8 +1108,6 @@ header {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
-
 }
 
 /***** FOOTER *****/
@@ -1281,25 +1118,24 @@ footer {
   background-color: var(--secundary-background);
 }
 
-footer .menu-footer{
+footer .menu-footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
 }
 
-
-footer section{
+footer section {
   flex: 1;
   max-width: 700px;
   justify-self: flex-end;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: .8rem;
+  gap: 0.8rem;
 }
 
-footer section > div{
+footer section > div {
   flex: 1;
 }
 
@@ -1318,12 +1154,12 @@ footer section > div{
   align-items: center;
   justify-content: center;
   background-color: var(--secundary-back-darck);
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .social-media a i {
   color: var(--background-color);
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .social-media a:hover {
@@ -1331,10 +1167,9 @@ footer section > div{
 }
 
 .social-media a:hover i {
-
   color: var(--background-color);
   font-size: 1.3rem;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .copyright {
@@ -1350,30 +1185,25 @@ footer section > div{
   font-size: 1rem;
 }
 
-.copyright p + p{
+.copyright p + p {
   margin-top: 6px;
 }
 
 footer h2 {
-
-  transition: .5s;
+  transition: 0.5s;
   cursor: pointer;
   font-size: 1.5rem;
 }
 
 footer a h2 b {
-
   color: var(--important-color);
-
 }
 
 footer div h2:hover {
-
   color: var(--important-color);
 }
 
 footer div h2:hover b {
-
   color: var(--primary-color);
 }
 
@@ -1439,7 +1269,6 @@ footer i:hover {
 
 .login-register section,
 .login-sign-in section {
-
   width: 100%;
   height: 70%;
   display: flex;
@@ -1462,11 +1291,9 @@ footer i:hover {
   background-position: center;
   background-size: cover;
   background-image: url(https://img.freepik.com/free-vector/sign-concept-illustration_114360-125.jpg?w=2000);
-
 }
 
 .login-register section {
-
   width: 100%;
   height: 100%;
   background-color: #00000090;
@@ -1479,7 +1306,6 @@ footer i:hover {
 
 .login-register section button p {
   color: #fff;
-
 }
 
 .login-register h1 {
@@ -1492,18 +1318,15 @@ footer i:hover {
 .login-register h1 b,
 .login-register h3 b {
   color: var(--important-color);
-
 }
 
 .register {
   color: var(--background-color);
   font-size: 1.1rem;
-  letter-spacing: 0.rem;
-
+  letter-spacing: 0rem;
 }
 
 .register h3 {
-
   font-size: 1.3rem;
   margin-left: 50px;
   width: 80%;
@@ -1511,34 +1334,25 @@ footer i:hover {
   color: var(--secundary-background);
 }
 
-
-
 /* Responsividade - Smartphone - Tablet - DaskTop - etc.. */
 
 @media all and (max-width: 851px) {
-
   .login-container .login-register {
-
     display: none;
   }
 }
 
 @media all and (max-width: 425px) {
-
   .menu div h1 {
-
     font-size: 1.3rem;
   }
 
   .banner-initial {
-
     border-radius: initial;
     background: red;
-
   }
 
   .banner-initial figure {
-
     width: 100%;
     height: 100%;
     background-image: url(..//img/backgrounds/mobile-back.jpg);
@@ -1548,19 +1362,15 @@ footer i:hover {
   }
 
   .search-banner h4 {
-
     font-size: 2.6rem;
     margin-left: -40px;
   }
 
   .search-banner div {
-
     margin-left: -40px;
-
   }
 
   .search-banner div input {
-
     width: 92%;
   }
 
@@ -1570,7 +1380,6 @@ footer i:hover {
     margin-top: 60px;
   }
 
-
   .scrolling-wrapper {
     width: 85%;
     display: flex;
@@ -1578,9 +1387,7 @@ footer i:hover {
     overflow-x: scroll;
   }
 
-
   .box {
-
     min-width: 180px;
     height: 190px;
     display: flex;
@@ -1593,7 +1400,6 @@ footer i:hover {
   }
 
   .box div {
-
     min-width: 130px;
     height: 130px;
     border-radius: 50%;
@@ -1604,13 +1410,11 @@ footer i:hover {
   }
 
   .box div i {
-
     font-size: 2.5rem;
     color: var(--important-color);
   }
 
   .scrolling-wrapper {
-
     width: 84%;
     display: flex;
     justify-content: space-between;
@@ -1625,14 +1429,12 @@ footer i:hover {
   }
 
   .box-catalogue {
-
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
   .payments {
-
     flex-wrap: nowrap;
     margin-bottom: -10px;
   }
@@ -1642,7 +1444,6 @@ footer i:hover {
   }
 
   footer {
-
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: flex-start;
@@ -1653,7 +1454,6 @@ footer i:hover {
 /************** RESPONSIVIDADE ****************/
 
 @media (max-width: 1250px) {
-
   /******* BANNER HOME ******/
   .banner-initial figure {
     width: 100%;
@@ -1662,27 +1462,20 @@ footer i:hover {
 
   /******* CATEGORIAS ******/
   .scrolling-wrapper {
-
     width: 88%;
     gap: 6px;
-
   }
 
   .box {
-
     width: 120px;
-
   }
 
   .titles-page {
-
     width: 88%;
-
   }
 
   /******* CATALOGUE ******/
   .box-catalogue {
-
     width: 88%;
   }
 
@@ -1714,47 +1507,37 @@ footer i:hover {
 }
 
 @media (max-width: 1104px) {
-
   /******* CATEGORIAS ******/
   .scrolling-wrapper {
-
     width: 88%;
     gap: 30px;
-
   }
 
   .box {
-
     width: 31%;
   }
 
   .titles-page {
-
-    margin-top: 100px
+    margin-top: 100px;
   }
 
   /******* CATALOGUE ******/
 
   .box-catalogue li {
-
     width: 227px;
     height: 340px;
     margin-bottom: 0px;
   }
 
   .box-catalogue li figure {
-
     height: 80%;
   }
 
   .box-catalogue li figcaption {
-
     height: 20%;
   }
 
   .payments {
-
-
     margin: 0px;
     margin-top: 90px;
   }
@@ -1762,19 +1545,16 @@ footer i:hover {
   /******* CARROSSEL ******/
 
   .carrossel li {
-
     width: 227px;
     height: 340px;
     margin-bottom: 0px;
   }
 
   .carrossel li figure {
-
     height: 80%;
   }
 
   .carrossel li figcaption {
-
     height: 20%;
   }
 
@@ -1790,7 +1570,6 @@ footer i:hover {
 }
 
 @media (max-width: 991px) {
-
   /******* CATEGORIAS ******/
   .scrolling-wrapper {
     width: 88%;
@@ -1802,37 +1581,32 @@ footer i:hover {
   }
 
   .titles-page {
-    margin-top: 100px
+    margin-top: 100px;
   }
 
   /******* CATALOGUE ******/
 
   .box-catalogue li {
-
     width: 203px;
     height: 340px;
     margin-bottom: 0px;
   }
 
   .box-catalogue li figure {
-
     height: 80%;
   }
 
   .box-catalogue li figcaption {
-
     height: 20%;
   }
 
   .box-catalogue li figcaption h1 {
-
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 
   /******* PAYMENTS ******/
 
   .payments div {
-
     height: 150px;
     display: flex;
     align-items: center;
@@ -1841,15 +1615,13 @@ footer i:hover {
   }
 
   .none-payment {
-
     display: none;
   }
 
   /******* CARROSSEL ******/
 
   .carrossel li figcaption h1 {
-
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 
   /*******  SEE ALL ******/
@@ -1860,7 +1632,6 @@ footer i:hover {
 }
 
 @media (max-width: 947px) {
-
   /******* CATEGORIAS ******/
   .scrolling-wrapper {
     width: 88%;
@@ -1872,7 +1643,7 @@ footer i:hover {
   }
 
   .titles-page {
-    margin-top: 100px
+    margin-top: 100px;
   }
 
   /******* CATALOGUE ******/
@@ -1882,100 +1653,87 @@ footer i:hover {
   }
 
   .box-catalogue li {
-
     width: 253px;
     height: 340px;
     margin-bottom: 0px;
   }
 
   .box-catalogue li figure {
-
     height: 80%;
   }
 
-  .box-catalogue li figcaption {
-    @media (max-width: 991px) {
-
-      /******* CATEGORIAS ******/
-      .scrolling-wrapper {
-        width: 88%;
-        gap: 30px;
-      }
-
-      .box {
-        width: 31%;
-      }
-
-      .titles-page {
-        margin-top: 100px
-      }
-
-      /******* CATALOGUE ******/
-
-      .box-catalogue li {
-
-        width: 203px;
-        height: 340px;
-        margin-bottom: 0px;
-      }
-
-      .box-catalogue li figure {
-
-        height: 80%;
-      }
-
-      .box-catalogue li figcaption {
-
-        height: 20%;
-      }
-
-      .box-catalogue li figcaption h1 {
-
-        font-size: .9rem;
-      }
-
-      /******* PAYMENTS ******/
-
-      .payments div {
-
-        height: 150px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0px;
-      }
-
-      .none-payment {
-
-        display: none;
-      }
-
-      /******* CARROSSEL ******/
-
-      .carrossel li figcaption h1 {
-
-        font-size: .9rem;
-      }
-
-      /*******  SEE ALL ******/
-
-      .see-all {
-        width: 87%;
-      }
+  @media (max-width: 991px) {
+    /******* CATEGORIAS ******/
+    .scrolling-wrapper {
+      width: 88%;
+      gap: 30px;
     }
 
+    .box {
+      width: 31%;
+    }
+
+    .titles-page {
+      margin-top: 100px;
+    }
+
+    /******* CATALOGUE ******/
+
+    .box-catalogue li {
+      width: 203px;
+      height: 340px;
+      margin-bottom: 0px;
+    }
+
+    .box-catalogue li figure {
+      height: 80%;
+    }
+
+    .box-catalogue li figcaption {
+      height: 20%;
+    }
+
+    .box-catalogue li figcaption h1 {
+      font-size: 0.9rem;
+    }
+
+    /******* PAYMENTS ******/
+
+    .payments div {
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0px;
+    }
+
+    .none-payment {
+      display: none;
+    }
+
+    /******* CARROSSEL ******/
+
+    .carrossel li figcaption h1 {
+      font-size: 0.9rem;
+    }
+
+    /*******  SEE ALL ******/
+
+    .see-all {
+      width: 87%;
+    }
+  }
+  .box-catalogue li figcaption {
     height: 20%;
   }
 
   .box-catalogue li figcaption h1 {
-
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 
   /******* PAYMENTS ******/
 
   .payments div {
-
     height: 150px;
     display: flex;
     align-items: center;
@@ -1984,22 +1742,18 @@ footer i:hover {
   }
 
   .none-payment {
-
     display: none;
   }
 
   /******* CARROSSEL ******/
 
   .carrossel li figcaption h1 {
-
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   .pay-contact div {
-
     display: flex;
     justify-content: space-around;
-
   }
 
   /*******  SEE ALL ******/
@@ -2010,7 +1764,6 @@ footer i:hover {
 }
 
 @media (max-width: 690px) {
-
   /******* CATEGORIAS ******/
   .scrolling-wrapper {
     width: 88%;
@@ -2036,7 +1789,7 @@ footer i:hover {
   }
 
   .titles-page {
-    margin-top: 100px
+    margin-top: 100px;
   }
 
   /******* CATALOGUE ******/
@@ -2046,26 +1799,22 @@ footer i:hover {
   }
 
   .box-catalogue li {
-
     width: 188px;
     height: 300px;
     margin-bottom: 0px;
   }
 
   .box-catalogue li figure {
-
     height: 80%;
   }
 
   .box-catalogue li figcaption h1 {
-
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   /******* PAYMENTS ******/
 
   .payments div {
-
     height: 150px;
     display: flex;
     align-items: center;
@@ -2074,7 +1823,6 @@ footer i:hover {
   }
 
   .payments div ul {
-
     height: 100%;
     display: flex;
     flex-wrap: nowrap;
@@ -2089,22 +1837,18 @@ footer i:hover {
   }
 
   .payments div ul li section p {
-
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
 
   /******* CARROSSEL ******/
 
   .carrossel li figcaption h1 {
-
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   .pay-contact div {
-
     display: flex;
     justify-content: space-around;
-
   }
 
   /*******  SEE ALL ******/
@@ -2112,11 +1856,9 @@ footer i:hover {
   .see-all {
     width: 87%;
   }
-
 }
 
 @media (max-width: 500px) {
-
   /******* CATALOGUE ******/
 
   .box-catalogue {
@@ -2124,54 +1866,44 @@ footer i:hover {
   }
 
   .box-catalogue li {
-
     width: 210px;
     height: 300px;
     margin-bottom: 0px;
   }
 
   .box-catalogue li figure {
-
     height: 80%;
   }
 
   .box-catalogue li figcaption h1 {
-
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   .catalogue-suport {
-
     display: none;
   }
 
   /******* PAYMENTS ******/
 
   .payments div ul li section p {
-
-    font-size: .5rem;
+    font-size: 0.5rem;
   }
 
   /******* FOOTER ******/
 
   footer {
-
     padding: 30px;
     display: flex;
     flex-direction: column-reverse;
   }
 
-
   footer section {
-
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-
   .media {
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2189,17 +1921,14 @@ footer i:hover {
   .shop a,
   .links a,
   .contact a {
-
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 }
 
 @media (max-width: 460px) {
-
   /******* MENU ******/
 
   .menu div h1 {
-
     font-size: 1.5rem;
   }
 
@@ -2207,7 +1936,6 @@ footer i:hover {
 
   .search-banner h4,
   .search-banner div {
-
     margin-left: -34px;
   }
 
@@ -2217,7 +1945,6 @@ footer i:hover {
   }
 
   .search-banner div input {
-
     width: 90%;
   }
 
@@ -2237,26 +1964,22 @@ footer i:hover {
   }
 
   .box-catalogue li {
-
     width: 192px;
     height: 300px;
     margin-bottom: 0px;
   }
 
   .box-catalogue li figure {
-
     height: 80%;
   }
 
   .box-catalogue li figcaption h1 {
-
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   /******* PAYMENTS ******/
 
   .payments div {
-
     height: 150px;
     display: flex;
     align-items: center;
@@ -2265,7 +1988,6 @@ footer i:hover {
   }
 
   .payments div ul {
-
     height: 100%;
     display: flex;
     flex-wrap: nowrap;
@@ -2280,22 +2002,18 @@ footer i:hover {
   }
 
   .payments div ul li section p {
-
     display: none;
   }
 
   /******* CARROSSEL ******/
 
   .carrossel li figcaption h1 {
-
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   .pay-contact div {
-
     display: flex;
     justify-content: space-around;
-
   }
 
   /*******  SEE ALL ******/
@@ -2303,5 +2021,3 @@ footer i:hover {
   .see-all {
     width: 87%;
   }
-
-}

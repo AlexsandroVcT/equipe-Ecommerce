@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/products.css" />
     <link rel="stylesheet" href="assets/css/styleCarrinho.css" />
     <title>Produtos</title>
   </head>
@@ -23,8 +25,8 @@
         <div>
           <!---- SCROLL ABRE FECHA CARRINHO ---->
           <div class="config">
-            <a
-              ><i class="fas fa-shopping-bag" id="cart-btn"></i>
+            <a>
+              <i class="fas fa-shopping-bag" id="cart-btn"></i>
               <!-- Total de itens na sacolinha do carrinho -->
               <p id="cont-itens-carrinho" class="sacolinhaDark"></p>
             </a>
@@ -98,8 +100,27 @@
         </div>
       </nav>
     </header>
-    <h1>Produtos</h1>
+    <div class="banner">
+      <div class="content">
+        <h2 id="sentence">Adquira já o seu Produto</h2>
+        <p id="slogan">Os melhores produtos tão perto de si, basta apenas um clique.</p>
+      </div>
+    </div>
     <!-------------- SCRIPT SLICK JS ------------------->
     <script src="assets/js/scriptCarrinho.js"></script>
+    <script>
+      const title = document.querySelector('#sentence')
+      const slogan = document.querySelector('#slogan')
+
+      const LetterMachine = elemento => {
+        const frase = elemento.innerHTML
+        const fraseLetters = frase.split('')
+        elemento.innerHTML = ''
+        fraseLetters.forEach((letter, index) => setTimeout(() => elemento.innerHTML += letter, 90 * index));
+        setTimeout(() => slogan.classList.add('ativo'), 2500)
+      }
+
+      window.addEventListener('load', LetterMachine(title))
+    </script>
   </body>
 </html>
