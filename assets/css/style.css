@@ -354,12 +354,6 @@ header {
   cursor: pointer;
 }
 
-.menu ul li:hover a {
-  color: var(--background-color);
-  background-color: var(--important-color);
-  cursor: pointer;
-}
-
 #active-link-menu a {
   color: var(--background-color);
   background-color: var(--important-color);
