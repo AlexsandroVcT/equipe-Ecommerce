@@ -1150,27 +1150,22 @@ footer {
 
 footer .menu-footer {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 4%;
   width: 100%;
-}
-
-footer section {
-  flex: 1;
-  max-width: 700px;
-  justify-self: flex-end;
-  display: flex;
+  margin: auto;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 0.8rem;
+  gap: 1rem;
 }
 
-footer section>div {
+footer .menu-footer > div {
   flex: 1;
+  min-width: 200px;
+  max-width: 300px;
 }
 
 .social-media {
-  margin-top: 30px;
+  margin: 30px 0;
   gap: 10px;
   display: flex;
   align-items: center;
@@ -1929,16 +1924,9 @@ footer i:hover {
 
   /******* FOOTER ******/
 
-  footer {
-    padding: 30px;
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  footer section {
-    display: flex;
-    align-items: center;
+  footer .menu-footer {
     justify-content: center;
+    align-items: center;
   }
 
   .media {
