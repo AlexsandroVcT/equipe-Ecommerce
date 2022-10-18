@@ -32,9 +32,9 @@ $('.carrone').slick({
       }
     },
     {
-      breakpoint: 500,
+      breakpoint: 424,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1
       }
     },
