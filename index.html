@@ -8,10 +8,6 @@
 
   <!------ LINK CSS STYLE ------->
   <link rel="stylesheet" href="assets/css/style.css">
-  <!------- LINK RESET CSS ---------->
-  <link rel="stylesheet" href="assets/css/reset.css">
-  <!-- LINK CSS STYLE CARRINHO -->
-  <link rel="stylesheet" href="assets/css/styleCarrinho.css">
   <!------ FAVICON ------->
   <link rel="shortcut icon" href="assets/img/favicon/830da1b9d031a459d1fc38de3c90197c_tn-removebg-preview.png"
     type="image/x-icon">
@@ -40,22 +36,26 @@
 <body>
 
   <!------ MENU ------->
-  <header>
+  <header id ="header" class="container">
     <nav class="menu">
       <!-- Essa div Tava quebrando o menu , Junto com a logo -->
       <!-- <div style="justify-content: left;"> -->
-      <h1>
-        <img src="assets/img/Logo-Ecommerce/logo_vermelha.png" alt="logo" class="logoEcommerce">
-      </h1>
 
-      <ul>
+
+      <div>
+        <img src="assets/img/Logo-Ecommerce/logo_vermelha.png" alt="logo" class="logoEcommerce">
+      </div>
+
+      <ul class = 'list'>
         <li id="active-link-menu"><a href="/index.html">Home</a></li>
         <li><a href="/produtos.html">Produtos</a></li>
         <li><a href="/sobre.html">Sobre-nós</a></li>
         <li><a href="/contacto.html">Contatos</a></li>
       </ul>
-      <div>
 
+      <button id = "menu-mobile">Menu</button>
+
+      <div class = "configs-menu">
         <!---- SCROLL ABRE FECHA CARRINHO ---->
         <div class="config">
           <a>
@@ -854,6 +854,7 @@
 
   <!-------------- SCRIPT SLICK JS ------------------->
   <script src="assets/js/scriptCarrinho.js"></script>
+  <script src="assets/js/menuMobile.js"></script>
 
   <!-- SWEETALERT PERSONALIZADO -->
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
