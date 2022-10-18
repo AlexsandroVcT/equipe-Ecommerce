@@ -1837,6 +1837,14 @@ footer i:hover {
     font-size: 0.5rem;
   }
 
+  .payments ul li{
+
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+
+  }
+
   /******* FOOTER ******/
 
   footer .menu-footer {
@@ -1941,5 +1949,16 @@ footer i:hover {
 
   .see-all {
     width: 87%;
+  }
+}
+
+@media (max-width: 460px){
+  .titles-page h5{
+    font-size: 1rem;
+  }
+
+  .pay-contact section{
+    
+    text-align: center;
   }
 }
