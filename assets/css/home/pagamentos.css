@@ -1,0 +1,75 @@
+
+/***** PAGAMENTOS + Contatos *****/
+
+.payments {
+  margin: 100px 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.payments section h1 {
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+}
+
+.payments div {
+  width: 84%;
+  padding: 50px 40px;
+  background-color: var(--secundary-background);
+  border-bottom: 1px solid var(--secundary-color);
+  box-shadow: var(--box-shadow-contents);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+
+.payments div:hover {
+  transition: 0.5s;
+  box-shadow: var(--box-shadow-contents-hover);
+}
+
+.payments div ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.payments div ul li {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+}
+
+.payments div ul li i {
+  margin-right: 10px;
+  font-size: 2rem;
+  color: var(--important-color);
+}
+
+.payments div ul li h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+.payments div ul li p {
+  font-size: 0.8rem;
+}
+
+.pay-contact div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}

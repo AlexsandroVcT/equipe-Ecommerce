@@ -1,0 +1,227 @@
+/***** MENU *****/
+
+header {
+  margin-bottom: 30px;
+}
+
+.menu {
+  background-color: var(--background-color);
+  width: 100%;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 0;
+  transition: 0.5s;
+}
+
+/* CONFLITO COM O MENU RESPONSIVEL */
+/* .menu ul {
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+} */
+
+.menu ul li {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: .5s;
+}
+
+.menu ul li a {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: .5s;
+}
+
+.menu ul li:hover {
+  color: var(--background-color);
+  background-color: var(--important-color);
+  cursor: pointer;
+}
+
+#active-link-menu a {
+  color: var(--background-color);
+  background-color: var(--important-color);
+}
+
+.menu div {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 10px;
+  width: 16%;
+}
+
+.menu div h1 {
+  transition: 0.5s;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+.menu div h1 b {
+  color: var(--important-color);
+}
+
+.menu div h1:hover {
+  color: var(--important-color);
+}
+
+.menu div h1:hover b {
+  color: var(--primary-color);
+}
+
+.menu div a {
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: var(--secundary-background); */
+}
+
+.menu div i {
+  font-size: 1.1rem;
+  opacity: 0.6;
+}
+
+.menu div a:hover i {
+  transform: scale(1.2);
+
+  /* font-size: 1.2rem; */
+  opacity: 1;
+  /* color: var(--primary-color); */
+  /* transform: rotate(10deg); */
+  transition: 0.2s;
+}
+
+.menu-scroll {
+  height: 80px;
+  background-color: var(--secundary-background);
+  box-shadow: 0px 0px 10px 0px var(--primary-color);
+}
+
+.menu-scroll #openConfig {
+  top: 80px;
+  height: 90vh;
+}
+
+@media all and (max-width: 859px) {
+
+  /* .menu ul {
+    display: none;
+  } */
+  /* AQUI DA CONFLITO COM O MENU RESPONSIVEL */
+  .menuMobile div {
+    width: 42%;
+  }
+}
+
+.config button {
+  background: none;
+  border: none;
+}
+
+#openBag,
+#openConfig {
+  width: 100%;
+  height: 87vh;
+  position: absolute;
+  top: 93px;
+  left: 0px;
+  display: none;
+}
+
+.menu-scroll #openBag,
+.menu-scroll #openConfig {
+  top: 80px;
+  height: 90vh;
+}
+
+.btn-bag-open,
+.btn-config {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00000095;
+  animation: forwards ease animateBag 0.5s alternate;
+  animation-fill-mode: forwards;
+}
+
+.btn-bag-open header,
+.btn-config ul {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 2;
+  width: 400px;
+  height: 100%;
+  background-color: #f2f2f280;
+  backdrop-filter: blur(5px);
+  box-shadow: -5px 10px 20px 0px #00000095;
+}
+
+.btn-config ul {
+  display: flex;
+  padding-top: 30px;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-config ul li,
+.btn-config ul div {
+  width: 90%;
+  background-color: var(--background-color);
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.btn-config ul li:hover p,
+.btn-config ul li:hover i {
+  transition: 0.3s;
+  color: var(--background-color);
+}
+
+#btn-theme i p {
+  position: absolute;
+  top: 21%;
+  right: 60px;
+  transition: 0.5s;
+}
+
+#btn-theme {
+  width: 22.5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.5s;
+}
+
+@keyframes animateBag {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

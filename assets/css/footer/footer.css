@@ -1,0 +1,110 @@
+
+/***** FOOTER *****/
+
+footer {
+  border-top: 1px solid var(--secundary-color);
+  padding: 40px 120px 0;
+  background-color: var(--secundary-background);
+}
+
+footer .menu-footer {
+  display: flex;
+  gap: 4%;
+  width: 100%;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+footer .menu-footer > div {
+  flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+}
+
+.social-media {
+  margin: 30px 0;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.social-media a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secundary-back-darck);
+  transition: 0.3s ease-in-out;
+}
+
+.social-media a i {
+  color: var(--background-color);
+  transition: 0.3s ease-in-out;
+}
+
+.social-media a:hover {
+  background-color: var(--important-color);
+}
+
+.social-media a:hover i {
+  color: var(--background-color);
+  font-size: 1.3rem;
+  transition: 0.5s;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 30px;
+  padding: 30px 0;
+  border-top: 1px solid var(--secundary-back-darck);
+  width: 100%;
+  display: block;
+}
+
+.copyright p {
+  font-size: 1rem;
+}
+
+.copyright p+p {
+  margin-top: 6px;
+}
+
+footer h2 {
+  transition: 0.5s;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+footer a h2 b {
+  color: var(--important-color);
+}
+
+footer div h2:hover {
+  color: var(--important-color);
+}
+
+footer div h2:hover b {
+  color: var(--primary-color);
+}
+
+footer h2,
+h3 {
+  margin-bottom: 20px;
+}
+
+footer li {
+  line-height: 30px;
+}
+
+footer a:hover {
+  color: var(--important-color);
+}
+
+footer i:hover {
+  cursor: pointer;
+  color: var(--important-color);
+}
