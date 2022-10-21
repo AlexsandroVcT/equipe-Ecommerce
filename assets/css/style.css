@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 
-/* =========> DEFAULT SYLES <======== */
+/* =========> DEFAULT STYLES <======== */
 @import url('./global/global.css');
 @import url('./footer/footer.css');
 
@@ -28,6 +28,9 @@
 @import url('./home/frete.css');
 @import url('./home/pagamentos.css');
 @import url('./home/produtos.css');
+
+/* ========> STYLE MENU MOBILE <======== */
+@import url('./menu-mobile/mobile-tel.css');
 
 
 
@@ -467,70 +470,12 @@ body {
 }
 
 
-/*  =============== Author Diogo */
-
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0px 20px !important;
-}
-
-#menu-mobile {
-  display: none ;
-}
-
-@media(max-width:1200px) {
-  #header-bg{
-    padding: 0 20px;
-  }
-  .menu {
-    /* display: none; */
-    padding: 0 20px;
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .menu .list,
-  .configs-menu {
-    display: none !important;
-  }
-  #menu-mobile {
-    display: block ;
-  }
-
-  
-
-  
-
-
-
-
-  /* #menu-mobile::before {
-    content: '';
-    width: 20px;
-    height: 2px;
-    background: #333;
-    display: flex;
-    
-  
-  }
-  #menu-mobile::after {
-    content: '';
-    width: 20px;
-    height: 2px;
-    background: #333;
-    display: flex;
-  
-  } */
-
-
-}
-
 /* Fix logo */
-
-.logoEcommerce{
+.logoEcommerce {
   width: 100%;
 }
+
+
 
 /* Responsividade - Smartphone - Tablet - DaskTop - etc.. */
 

@@ -1,4 +1,3 @@
-
 /***** MENU *****/
 
 header {
@@ -20,13 +19,14 @@ header {
   transition: 0.5s;
 }
 
-.menu ul {
+/* CONFLITO COM O MENU RESPONSIVEL */
+/* .menu ul {
   width: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
-}
+} */
 
 .menu ul li {
   padding: 10px 20px;
@@ -120,11 +120,12 @@ header {
 }
 
 @media all and (max-width: 859px) {
-  .menu ul {
-    display: none;
-  }
 
-  .menu div {
+  /* .menu ul {
+    display: none;
+  } */
+  /* AQUI DA CONFLITO COM O MENU RESPONSIVEL */
+  .menuMobile div {
     width: 42%;
   }
 }
@@ -180,6 +181,8 @@ header {
   padding-top: 30px;
   justify-content: flex-start;
   flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
 .btn-config ul li,
