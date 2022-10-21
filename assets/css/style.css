@@ -88,6 +88,260 @@ body {
 
 
 
+.btn-all {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 800;
+  border: var(--important-color) 2px solid;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn-all:hover {
+  transition: 0.5s;
+  box-shadow: 0px 100px 0px 0px inset var(--important-color);
+  color: var(--background-color);
+}
+
+/***** MENU *****/
+
+header {
+  margin-bottom: 30px;
+}
+
+.menu {
+
+  background-color: var(--background-color);
+  width: 100%;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 0;
+  transition: 0.5s;
+}
+
+.menu ul {
+
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu ul li {
+
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: .5s;
+}
+
+.menu ul li a {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: .5s;
+}
+
+.menu ul li:hover {
+  color: var(--background-color);
+  background-color: var(--important-color);
+  cursor: pointer;
+}
+
+#active-link-menu a {
+  color: var(--background-color);
+  background-color: var(--important-color);
+}
+
+.menu div {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 10px;
+  width: 16%;
+}
+
+.menu div h1 {
+  transition: 0.5s;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+.menu div h1 b {
+  color: var(--important-color);
+}
+
+.menu div h1:hover {
+  color: var(--important-color);
+}
+
+.menu div h1:hover b {
+  color: var(--primary-color);
+}
+
+.menu div a {
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: var(--secundary-background); */
+}
+
+.menu div i {
+  font-size: 1.1rem;
+  opacity: 0.6;
+}
+
+.menu h1 img {
+  margin-top: 10px;
+  width: 10rem;
+}
+
+.menu div a:hover i {
+  transform: scale(1.2);
+
+  /* font-size: 1.2rem; */
+  opacity: 1;
+  /* color: var(--primary-color); */
+  /* transform: rotate(10deg); */
+  transition: 0.2s;
+}
+
+.menu-scroll {
+  height: 80px;
+  background-color: var(--secundary-background);
+  box-shadow: 0px 0px 10px 0px var(--primary-color);
+}
+
+.menu-scroll #openConfig {
+  top: 80px;
+  height: 90vh;
+}
+
+@media all and (max-width: 859px) {
+  .menu ul {
+    display: none;
+  }
+
+  .menu div {
+    width: 42%;
+  }
+}
+
+.config button {
+  background: none;
+  border: none;
+}
+
+#openBag,
+#openConfig {
+  width: 100%;
+  height: 87vh;
+  position: absolute;
+  top: 93px;
+  left: 0px;
+  display: none;
+}
+
+.menu-scroll #openBag,
+.menu-scroll #openConfig {
+  top: 80px;
+  height: 90vh;
+}
+
+.btn-bag-open,
+.btn-config {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00000095;
+  animation: forwards ease animateBag 0.5s alternate;
+  animation-fill-mode: forwards;
+}
+
+.btn-bag-open header,
+.btn-config ul {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 2;
+  width: 400px;
+  height: 100%;
+  background-color: #f2f2f280;
+  backdrop-filter: blur(5px);
+  box-shadow: -5px 10px 20px 0px #00000095;
+}
+
+.btn-config ul {
+  display: flex;
+  padding-top: 30px;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.btn-config ul li,
+.btn-config ul div {
+  width: 90%;
+  background-color: var(--background-color);
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.btn-config ul li:hover p,
+.btn-config ul li:hover i {
+  transition: 0.3s;
+  color: var(--background-color);
+}
+
+#btn-theme i p {
+  position: absolute;
+  top: 21%;
+  right: 60px;
+  transition: 0.5s;
+}
+
+#btn-theme {
+  width: 22.5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.5s;
+}
+
+@keyframes animateBag {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
 /***** BANNER *****/
 
 .banner-initial {
@@ -263,6 +517,226 @@ body {
 
 /***** CATALOGUE INITIAL *****/
 
+.box-catalogue {
+  width: 84%;
+  height: max-content;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(8);
+  gap: 20px;
+
+}
+
+.box-catalogue li {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+.box-catalogue figure {
+  width: 100%;
+  height: 83%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secundary-background);
+  position: relative;
+}
+
+.box-catalogue figure img {
+  width: 60%;
+}
+
+.box-catalogue figure:hover {
+  cursor: pointer;
+}
+
+.box-catalogue figcaption {
+  width: 100%;
+  height: 17%;
+  margin-top: 2px;
+  background-color: var(--secundary-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.box-catalogue figcaption div {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  padding-left: 20px;
+}
+
+.box-catalogue figcaption div h1 {
+  font-size: 1rem;
+  color: var(--primary-color);
+}
+
+.box-catalogue figcaption div h4 {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--important-color);
+}
+
+.box-catalogue figcaption section {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding-right: 20px;
+}
+
+.box-catalogue li .fa-heart,
+.carrossel li .fa-heart {
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 1.5rem;
+  color: red;
+}
+
+.box-catalogue li:hover .fa-heart,
+.box-catalogue li img:hover .fa-heart,
+.carrossel li:hover .fa-heart,
+.carrossel li img:hover .fa-heart {
+  display: flex;
+}
+
+.box-catalogue figcaption section i {
+  font-size: 1.4rem;
+}
+
+/***** PRODUCTS *****/
+
+.products {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.box-products {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.box-products:hover .buttons-arrows {
+  display: flex;
+  transition: 0.5s;
+}
+
+.carrossel {
+  width: 100%;
+  display: flex;
+}
+
+.carrossel li {
+  width: 300px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.carrossel li:hover,
+.box-catalogue li:hover {
+  transition: 0.3s;
+  transform: scale(1.04);
+}
+
+.carrossel figure {
+  width: 100%;
+  height: 83%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secundary-background);
+}
+
+.carrossel figure img {
+  width: 60%;
+  cursor: pointer;
+}
+
+.carrossel figure:hover {
+  cursor: pointer;
+}
+
+.carrossel figcaption {
+  width: 100%;
+  height: 17%;
+  margin-top: 2px;
+  background-color: var(--secundary-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.carrossel figcaption div {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2px;
+  padding-left: 20px;
+}
+
+.carrossel figcaption div h1 {
+  font-size: 1rem;
+  color: var(--primary-color);
+}
+
+.carrossel figcaption div h4 {
+  font-size: 1.4rem;
+  color: var(--important-color);
+}
+
+.carrossel figcaption section {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.carrossel figcaption section i {
+  font-size: 1.4rem;
+}
+
+.fas:hover {
+  color: var(--important-color);
+  cursor: pointer;
+}
+
+.far:hover {
+  color: red;
+  cursor: pointer;
+}
 
 
 /*** CARROSSEL ARROWS ***/
@@ -571,12 +1045,6 @@ body {
     background: none;
   }
 
-  .box-catalogue {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
   .payments {
     flex-wrap: nowrap;
     margin-bottom: -10px;
@@ -619,15 +1087,6 @@ body {
   }
 
   /******* CATALOGUE ******/
-  .box-catalogue {
-    width: 88%;
-  }
-
-  .box-catalogue li {
-    width: 260px;
-  }
-
-  /******* CATALOGUE ******/
 
   .payments div {
     width: 87%;
@@ -667,24 +1126,19 @@ body {
   }
 
   /******* CATALOGUE ******/
-
-  .box-catalogue li {
-    width: 227px;
-    height: 340px;
-    margin-bottom: 0px;
-  }
-
-  .box-catalogue li figure {
-    height: 80%;
-  }
-
-  .box-catalogue li figcaption {
-    height: 20%;
-  }
-
   .payments {
     margin: 0px;
     margin-top: 90px;
+  }
+
+  .box-catalogue {
+    width: 84%;
+    height: max-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8);
+    gap: 20px;
+
   }
 
   /******* CARROSSEL ******/
@@ -728,26 +1182,6 @@ body {
 
   .titles-page {
     margin-top: 100px;
-  }
-
-  /******* CATALOGUE ******/
-
-  .box-catalogue li {
-    width: 203px;
-    height: 340px;
-    margin-bottom: 0px;
-  }
-
-  .box-catalogue li figure {
-    height: 80%;
-  }
-
-  .box-catalogue li figcaption {
-    height: 20%;
-  }
-
-  .box-catalogue li figcaption h1 {
-    font-size: 0.9rem;
   }
 
   /******* PAYMENTS ******/
@@ -795,19 +1229,6 @@ body {
 
   /******* CATALOGUE ******/
 
-  .box-catalogue {
-    gap: 35px;
-  }
-
-  .box-catalogue li {
-    width: 253px;
-    height: 340px;
-    margin-bottom: 0px;
-  }
-
-  .box-catalogue li figure {
-    height: 80%;
-  }
 
   @media (max-width: 991px) {
 
@@ -826,24 +1247,6 @@ body {
     }
 
     /******* CATALOGUE ******/
-
-    .box-catalogue li {
-      width: 203px;
-      height: 340px;
-      margin-bottom: 0px;
-    }
-
-    .box-catalogue li figure {
-      height: 80%;
-    }
-
-    .box-catalogue li figcaption {
-      height: 20%;
-    }
-
-    .box-catalogue li figcaption h1 {
-      font-size: 0.9rem;
-    }
 
     /******* PAYMENTS ******/
 
@@ -872,13 +1275,6 @@ body {
     }
   }
 
-  .box-catalogue li figcaption {
-    height: 20%;
-  }
-
-  .box-catalogue li figcaption h1 {
-    font-size: 0.9rem;
-  }
 
   /******* PAYMENTS ******/
 
@@ -912,6 +1308,20 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+
+  .box-catalogue {
+    width: 84%;
+    height: max-content;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8);
+    gap: 20px;
+
+  }
+
+}
+
 @media (max-width: 690px) {
 
   /******* CATEGORIAS ******/
@@ -929,6 +1339,16 @@ body {
     margin-bottom: -30px;
   }
 
+  .box-catalogue {
+    width: 84%;
+    height: max-content;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8);
+    gap: 20px;
+
+  }
+
   .scrolling-wrapper::-webkit-scrollbar {
     display: none;
   }
@@ -943,25 +1363,6 @@ body {
   }
 
   /******* CATALOGUE ******/
-
-  .box-catalogue {
-    gap: 20px;
-  }
-
-  .box-catalogue li {
-    width: 188px;
-    height: 300px;
-    margin-bottom: 0px;
-  }
-
-  .box-catalogue li figure {
-    height: 80%;
-  }
-
-  .box-catalogue li figcaption h1 {
-    font-size: 0.8rem;
-  }
-
   /******* PAYMENTS ******/
 
   .payments div {
@@ -1011,24 +1412,6 @@ body {
 @media (max-width: 500px) {
   /******* CATALOGUE ******/
 
-  .box-catalogue {
-    gap: 20px;
-  }
-
-  .box-catalogue li {
-    width: 210px;
-    height: 300px;
-    margin-bottom: 0px;
-  }
-
-  .box-catalogue li figure {
-    height: 80%;
-  }
-
-  .box-catalogue li figcaption h1 {
-    font-size: 0.8rem;
-  }
-
   .catalogue-suport {
     display: none;
   }
@@ -1037,6 +1420,14 @@ body {
 
   .payments div ul li section p {
     font-size: 0.5rem;
+  }
+
+  .payments ul li {
+
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+
   }
 
   /******* FOOTER ******/
@@ -1100,26 +1491,6 @@ body {
     left: 18px;
   }
 
-  /******* CATALOGUE ******/
-
-  .box-catalogue {
-    gap: 20px;
-  }
-
-  .box-catalogue li {
-    width: 192px;
-    height: 300px;
-    margin-bottom: 0px;
-  }
-
-  .box-catalogue li figure {
-    height: 80%;
-  }
-
-  .box-catalogue li figcaption h1 {
-    font-size: 0.8rem;
-  }
-
   /******* PAYMENTS ******/
 
   .payments div {
@@ -1163,5 +1534,18 @@ body {
 
   .see-all {
     width: 87%;
+  }
+
+
+}
+
+@media (max-width: 460px) {
+  .titles-page h5 {
+    font-size: 1rem;
+  }
+
+  .pay-contact section {
+
+    text-align: center;
   }
 }
