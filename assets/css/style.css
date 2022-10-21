@@ -87,8 +87,7 @@ body {
 }
 
 
-<<<<<<< HEAD
-=======
+
 .btn-all {
   width: 150px;
   height: 50px;
@@ -212,7 +211,7 @@ header {
   opacity: 0.6;
 }
 
-.menu h1 img{
+.menu h1 img {
   margin-top: 10px;
   width: 10rem;
 }
@@ -341,7 +340,7 @@ header {
     opacity: 1;
   }
 }
->>>>>>> 4f7bc933f2869a066be464604a98fdf18418a560
+
 
 /***** BANNER *****/
 
@@ -518,9 +517,6 @@ header {
 
 /***** CATALOGUE INITIAL *****/
 
-
-<<<<<<< HEAD
-=======
 .box-catalogue {
   width: 84%;
   height: max-content;
@@ -528,7 +524,7 @@ header {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(8);
   gap: 20px;
-  
+
 }
 
 .box-catalogue li {
@@ -741,7 +737,7 @@ header {
   color: red;
   cursor: pointer;
 }
->>>>>>> 4f7bc933f2869a066be464604a98fdf18418a560
+
 
 /*** CARROSSEL ARROWS ***/
 
@@ -1142,7 +1138,7 @@ header {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(8);
     gap: 20px;
-    
+
   }
 
   /******* CARROSSEL ******/
@@ -1321,7 +1317,7 @@ header {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(8);
     gap: 20px;
-    
+
   }
 
 }
@@ -1350,7 +1346,7 @@ header {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(8);
     gap: 20px;
-    
+
   }
 
   .scrolling-wrapper::-webkit-scrollbar {
@@ -1426,7 +1422,7 @@ header {
     font-size: 0.5rem;
   }
 
-  .payments ul li{
+  .payments ul li {
 
     display: flex;
     gap: 20px;
@@ -1539,19 +1535,17 @@ header {
   .see-all {
     width: 87%;
   }
-<<<<<<< HEAD
-}
-=======
+
+
 }
 
-@media (max-width: 460px){
-  .titles-page h5{
+@media (max-width: 460px) {
+  .titles-page h5 {
     font-size: 1rem;
   }
 
-  .pay-contact section{
-    
+  .pay-contact section {
+
     text-align: center;
   }
 }
->>>>>>> 4f7bc933f2869a066be464604a98fdf18418a560

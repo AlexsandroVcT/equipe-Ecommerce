@@ -8,10 +8,6 @@
 
   <!------ LINK CSS STYLE ------->
   <link rel="stylesheet" href="assets/css/style.css">
-  <!------- LINK RESET CSS ---------->
-  <link rel="stylesheet" href="assets/css/reset.css">
-  <!-- LINK CSS STYLE CARRINHO -->
-  <link rel="stylesheet" href="assets/css/styleCarrinho.css">
   <!------ FAVICON ------->
   <link rel="shortcut icon" href="assets/img/favicon/830da1b9d031a459d1fc38de3c90197c_tn-removebg-preview.png"
     type="image/x-icon">
@@ -24,7 +20,7 @@
   <!--icon Dark-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css" />
   <!-- SCRIPT JIVOCHAT -->
-  <!-- <script src="//code.jivosite.com/widget/1YD6UYyWt8" async></script>-->
+  <script src="//code.jivosite.com/widget/1YD6UYyWt8" async></script>
   <!----- SCRIPT - FEATHERICONS ----- -->
   <script src="https://unpkg.com/feather-icons"></script>
   <!-- SWEETALERT PERSONALIZADO 
@@ -40,22 +36,22 @@
 <body>
 
   <!------ MENU ------->
-  <header>
-    <nav class="menu">
-      <!-- Essa div Tava quebrando o menu , Junto com a logo -->
-      <!-- <div style="justify-content: left;"> -->
-      <h1>
-        <img src="assets/img/Logo-Ecommerce/logo_vermelha.png" alt="logo" class="logoEcommerce">
-      </h1>
+  <header id="header" class="container header">
+    <nav class="menu nav">
 
-      <ul>
+      <div class="divDaLogo">
+        <img src="assets/img/Logo-Ecommerce/logo_vermelha.png" alt="logo" class="logoEcommerce">
+      </div>
+
+      <ul class='list menuMobile' id="menuMobile" role="menuMobile">
         <li id="active-link-menu"><a href="/index.html">Home</a></li>
         <li><a href="/produtos.html">Produtos</a></li>
         <li><a href="/sobre.html">Sobre-nós</a></li>
         <li><a href="/contacto.html">Contatos</a></li>
       </ul>
-      <div>
 
+
+      <div class="configs-menu">
         <!---- SCROLL ABRE FECHA CARRINHO ---->
         <div class="config">
           <a>
@@ -65,31 +61,40 @@
           </a>
         </div>
 
-        <!-- SISTEMA DE CARRINHO -->
+        <!--ABERTURA DA DIV SISTEMA DE CARRINHO -->
         <div class="cardCarrinho-container" id="meuCarrinho">
 
           <section class="box-cart">
 
             <section class="description">
+
               <div class="produtos" style="width: 45%;">
                 <p>Produtos</p>
               </div>
+
               <div style="width: 30%;">
                 <p>Quantidade</p>
               </div>
+
               <div style="width: 20%;">
                 <p>Preço</p>
               </div>
+
             </section>
+            <!-- Abertura da div cart-item -->
             <div class="cart-item">
 
+              <!-- Fechamento da div cart-item -->
             </div>
+
             <span id="totalFinal" class="total">
               <h2> Nenhum item escolhido </h2>
             </span>
+
             <button id="btnFinalizarCarrinho">
               <h2>Comprar</h2>
             </button>
+
           </section>
         </div>
 
@@ -104,33 +109,46 @@
           </button>
         </div>
 
+        <!--Abertura da Div openConfig-->
         <div id="openConfig" class="btn-config">
+
           <ul id="ul-OpenConfig">
+
             <li>
               <p>Minha Conta</p>
             </li>
+
             <li>
               <p>Pagamentos</p>
             </li>
+
             <li>
               <p>Direitos</p>
             </li>
 
+            <!-- Config Tema Dark & Light -->
+            <!--Abertura da Div ul-OpenConfig-->
             <div class="ul-OpenConfig">
               <input type="checkbox" name="chenge-theme" id="chenge-theme" />
               <label for="chenge-theme">
 
                 <li id="btn-theme">
+
                   <p>Tema</p>
+
                   <i class="bi bi-sun">
                     <p>Light</p>
                   </i>
+
                   <i class="bi bi-moon">
                     <p>Dark</p>
                   </i>
+
                 </li>
 
               </label>
+
+              <!--Fechamento da Div ul-OpenConfig-->
             </div>
 
             <li>
@@ -139,9 +157,18 @@
 
             <span id='li-sair'></span>
           </ul>
+
+          <!--Fechamento da Div openConfig-->
         </div>
+
+        <!--ABERTURA DA DIV SISTEMA DE CARRINHO -->
       </div>
+
+      <button class="btn-menu" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+        Menu<span class="hamburger"></span>
+      </button>
     </nav>
+
   </header>
 
   <!-------- BANNER INICIAL -------->
@@ -854,6 +881,7 @@
 
   <!-------------- SCRIPT SLICK JS ------------------->
   <script src="assets/js/scriptCarrinho.js"></script>
+  <script src="assets/js/menuMobile.js"></script>
 
   <!-- SWEETALERT PERSONALIZADO -->
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
