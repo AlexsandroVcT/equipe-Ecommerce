@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/products.css" />
+    <link rel="stylesheet" href="assets/css/styleCarrinho.css" />
+    <title>Produtos</title>
+  </head>
+  <body>
+    <header>
+      <nav class="menu">
+        <div style="justify-content: left">
+          <h1><b>E</b>-Ecommerce</h1>
+        </div>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li id="active-link-menu"><a href="/produtos.html">Produtos</a></li>
+          <li><a href="/sobre.html">Sobre-nós</a></li>
+          <li><a href="/contacto.html">Contatos</a></li>
+        </ul>
+        <div>
+          <!---- SCROLL ABRE FECHA CARRINHO ---->
+          <div class="config">
+            <a>
+              <i class="fas fa-shopping-bag" id="cart-btn"></i>
+              <!-- Total de itens na sacolinha do carrinho -->
+              <p id="cont-itens-carrinho" class="sacolinhaDark"></p>
+            </a>
+          </div>
+          <!-- SISTEMA DE CARRINHO -->
+          <div class="cardCarrinho-container" id="meuCarrinho">
+            <section class="box-cart">
+              <section class="description">
+                <div class="produtos" style="width: 45%">
+                  <p>Produtos</p>
+                </div>
+                <div style="width: 30%">
+                  <p>Quantidade</p>
+                </div>
+                <div style="width: 20%">
+                  <p>Preço</p>
+                </div>
+              </section>
+              <div class="cart-item"></div>
+              <span id="totalFinal" class="total">
+                <h2>Nenhum item escolhido</h2>
+              </span>
+              <button id="btnFinalizarCarrinho">
+                <h2>Comprar</h2>
+              </button>
+            </section>
+          </div>
+
+          <!-- Email do usuario CONFIG -->
+          <span id="user-email"></span>
+
+          <!---- OPEN CONFIG ---->
+
+          <div style="width: 18%" class="config">
+            <button type="button" onclick="Mudarestado('openConfig')">
+              <a><i class="fas fa-cog"></i></a>
+            </button>
+          </div>
+
+          <div id="openConfig" class="btn-config">
+            <ul id="ul-OpenConfig">
+              <li>
+                <p>Minha Conta</p>
+              </li>
+              <li>
+                <p>Pagamentos</p>
+              </li>
+              <li>
+                <p>Direitos</p>
+              </li>
+              <div class="ul-OpenConfig">
+                <input type="checkbox" name="chenge-theme" id="chenge-theme" />
+                <label for="chenge-theme">
+                  <li id="btn-theme">
+                    <p>Tema</p>
+                    <i class="bi bi-sun">
+                      <p>Light</p>
+                    </i>
+                    <i class="bi bi-moon">
+                      <p>Dark</p>
+                    </i>
+                  </li>
+                </label>
+              </div>
+              <li>
+                <p>Feedbacks</p>
+              </li>
+              <span id="li-sair"></span>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="banner">
+      <div class="content">
+        <h2 id="sentence">Adquira já o seu Produto</h2>
+        <p id="slogan">Os melhores produtos tão perto de si, basta apenas um clique.</p>
+      </div>
+    </div>
+    <!-------------- SCRIPT SLICK JS ------------------->
+    <script src="assets/js/scriptCarrinho.js"></script>
+    <script>
+      const title = document.querySelector('#sentence')
+      const slogan = document.querySelector('#slogan')
+
+      const LetterMachine = elemento => {
+        const frase = elemento.innerHTML
+        const fraseLetters = frase.split('')
+        elemento.innerHTML = ''
+        fraseLetters.forEach((letter, index) => setTimeout(() => elemento.innerHTML += letter, 90 * index));
+        setTimeout(() => slogan.classList.add('ativo'), 2500)
+      }
+
+      window.addEventListener('load', LetterMachine(title))
+    </script>
+  </body>
+</html>
