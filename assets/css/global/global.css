@@ -1,0 +1,63 @@
+/* CSS RESET */
+
+:root {
+  --primary-color: #383838;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: var(--primary-color);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  padding: 0;
+  margin: 0;
+}
+
+/* Server para deixar a grid alinhada ao adicionar a classe na div  */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+
+/************ SCROLL BARRA ************/
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #1d1e20;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  min-height: 100px;
+  background-color: var(--important-color);
+  transition: 0.4s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+  background-color: #8f151f;
+}

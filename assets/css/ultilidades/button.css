@@ -1,0 +1,23 @@
+
+/***** BUTTONS ALL *****/
+
+.btn-all {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 800;
+  border: var(--important-color) 2px solid;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn-all:hover {
+  transition: 0.5s;
+  box-shadow: 0px 100px 0px 0px inset var(--important-color);
+  color: var(--background-color);
+}

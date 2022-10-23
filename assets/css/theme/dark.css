@@ -1,0 +1,210 @@
+
+/* Dark Theme */
+.dark,
+.dark {
+  background-color: var(--back-darck);
+  color: #fff;
+  transition: 0.5s all;
+}
+
+.dark .bi-sun {
+  display: none;
+}
+
+.dark .bi-moon {
+  display: block;
+}
+
+.dark .carrossel figcaption section i {
+  color: var(--secundary-color);
+}
+
+.dark .carrossel figcaption h1 {
+  color: var(--background-color);
+}
+
+.dark .carrossel figure,
+.dark .carrossel figcaption {
+  background-color: var(--secundary-back-darck);
+}
+
+.dark .box {
+  background: var(--secundary-back-darck);
+}
+
+.dark .box div {
+  background: var(--primary-color);
+}
+
+.dark .box p {
+  color: #fff;
+}
+
+.dark .buttons-arrows button {
+  background-color: var(--secundary-back-darck);
+  box-shadow: 0px 0px 10px 0px #000;
+}
+
+.dark .titles-page h5 {
+  color: var(--background-color);
+}
+
+.dark .see-all,
+.dark .see-all-image {
+  background-color: var(--secundary-back-darck);
+}
+
+.dark .see-all h5 {
+  color: var(--background-color);
+}
+
+.dark .see-all p {
+  color: var(--secundary-background);
+}
+
+.dark .menu {
+  background-color: var(--third-back-darck);
+}
+
+.dark .menu ul li a,
+.dark .menu div h1,
+.dark .menu div i {
+  color: var(--background-color);
+}
+
+.dark .menu-scroll {
+  background-color: #000;
+  box-shadow: 0px 0px 10px 0px #000;
+}
+
+.menu div a:hover,
+.dark .menu div a:hover {
+  cursor: pointer;
+  background-color: var(--button-color);
+}
+
+.dark .menu div a:hover {
+  transition: 0.5s;
+}
+
+.dark .menu i {
+  color: var(--background-color);
+}
+
+.dark .btn-all {
+  color: var(--background-color);
+}
+
+.dark .btn-config ul li p {
+  color: var(--back-darck);
+}
+
+.dark .btn-config li i {
+  color: var(--back-darck);
+}
+
+.dark .btn-config li p {
+  color: var(--background-color);
+}
+
+/** FOOTER dark **/
+
+.dark footer {
+  background-color: var(--secundary-back-darck);
+  border-top: 1px solid var(--secundary-back-darck);
+}
+
+.dark footer li a,
+.dark footer i,
+.dark footer h2 {
+  color: var(--secundary-background);
+}
+
+.dark .social-media a {
+  background-color: var(--back-darck);
+}
+
+.dark footer h3,
+.dark footer h2 b {
+  color: var(--important-color);
+}
+
+.dark .copyright {
+  border-top: 1px solid var(--secundary-background);
+}
+
+.dark .copyright p {
+  color: var(--secundary-color);
+}
+
+.dark footer h2:hover b {
+  transition: 0.5s;
+  color: var(--background-color);
+}
+
+/** catalogue dark **/
+
+.dark .box-catalogue figure {
+  background-color: var(--secundary-back-darck);
+}
+
+/** payments dark **/
+
+.dark .payments div {
+  background-color: var(--secundary-back-darck);
+}
+
+.dark .payments section p,
+.dark .payments ul li p {
+  color: var(--secundary-background);
+}
+
+.dark .payments section h1,
+.dark .payments ul li h3 {
+  color: var(--background-color);
+}
+
+/** payments dark **/
+
+.dark .login-container {
+  background-color: var(--back-darck);
+}
+
+.dark .login-sign-in {
+  background-color: va690r(--secundary-back-darck);
+}
+
+.dark .login-sign-in h1 {
+  color: var(--background-color);
+}
+
+.dark .login-sign-in section p {
+  color: var(--secundary-background);
+}
+
+.dark .login-sign-in button {
+  color: var(--background-color);
+}
+
+.dark .login-sign-in input {
+  background-color: var(--back-darck);
+  outline: var(--back-darck);
+  color: var(--background-color);
+}
+
+.dark .login-sign-in input::placeholder {
+  color: var(--secundary-background);
+}
+
+.dark .login-sign-in input:focus {
+  outline: 1px solid var(--important-color);
+  box-shadow: 0px 0px 5px 0px var(--third-back-darck);
+}
+
+#iconMSN {
+  width: 12;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1b1b1b;
+}
