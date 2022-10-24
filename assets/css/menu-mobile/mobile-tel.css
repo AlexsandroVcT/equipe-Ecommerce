@@ -121,6 +121,17 @@
         transform: rotate(-135deg);
         top: -0.4375rem;
     }
+
+    /* MENU DO CARRINHO */
+    .box-cart div {
+        width: 89%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 25px;
+    }
 }
 
 /* RESOLUÇÃO 600PX */

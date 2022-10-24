@@ -387,6 +387,10 @@ header {
   color: var(--background-color);
 }
 
+.search-banner .seNaoParaGrafo {
+  color: wheat;
+}
+
 .search-banner div {
   position: relative;
   display: flex;

@@ -63,7 +63,72 @@ const products = {
     valor: 1399.00,
     img: '<img src="assets/img/projects/Philco-Tv.png">',
     qtd: 1
-  }
+  },
+
+  8: {
+    nome: "Alexa Echo Dot",
+    desc: "Muito Utilizado em tecnologias avançadas..",
+    valor: 379.05,
+    img: '<img src="assets/img/projects/alexa.png">',
+    qtd: 1
+  },
+  // PRODUTOS DA PAGINA DE PRODUTOS, COMEÇANDO DO 20
+  20: {
+    nome: "Notebook HP",
+    desc: "Muito Utilizado em tecnologias avançadas..",
+    valor: 3149.10,
+    img: '<img src="assets/img/pag-produtos/Notebook.png">',
+    qtd: 1
+  },
+  21: {
+    nome: "playstation-5",
+    desc: "Muito Utilizado em tecnologias avançadas..",
+    valor: 3998.90,
+    img: '<img src="assets/img/pag-produtos/playstation-5_qjz1.png">',
+    qtd: 1
+  },
+  22: {
+    nome: "Pc Gamer Computador",
+    desc: "Muito Utilizado em tecnologias avançadas..",
+    valor: 2472.96,
+    img: '<img src="assets/img/pag-produtos/Pc-Gamer-Computador-PNG.png">',
+    qtd: 1
+  },
+  23: {
+    nome: "Camera de Segurança",
+    desc: "Muito Utilizado em tecnologias avançadas..",
+    valor: 832.05,
+    img: '<img src="assets/img/pag-produtos/Camera-De-Segurança.png">',
+    qtd: 1
+  },
+  24: {
+    nome: "Drone DJI FPV",
+    desc: "Muito Utilizado em tecnologias avançadas..",
+    valor: 1057.00,
+    img: '<img src="assets/img/pag-produtos/Drone.png">',
+    qtd: 1
+  },
+  25: {
+    nome: "SMARTPHONE GAMER",
+    desc: "Muito Utilizado em tecnologias avançadas..",
+    valor: 9719.19,
+    img: '<img src="assets/img/pag-produtos/smartphone-mobile.png">',
+    qtd: 1
+  },
+  26: {
+    nome: "Carregador Veicular",
+    desc: "Muito Utilizado em tecnologias avançadas..",
+    valor: 8307.31,
+    img: '<img src="assets/img/pag-produtos/Carregador_Veicular.png">',
+    qtd: 1
+  },
+  27: {
+    nome: "Robô Aspirador de Pó",
+    desc: "Muito Utilizado em tecnologias avançadas..",
+    valor: 599.00,
+    img: '<img src="assets/img/pag-produtos/robot_unee_side_1.png">',
+    qtd: 1
+  },
 
 }
 
@@ -102,7 +167,7 @@ document.querySelector('body').addEventListener('click', ({
   }
 }) => {
   if ((id >= 0) &&
-    (id <= 7) &&
+    (id <= 100) && //Adicionando Quantidade de Produtos Que o site pode ter
     (id != '')) {
 
     if (localStorage.getItem('userLogado')) {
@@ -213,13 +278,13 @@ const getText = (id, {
 }
 
 // seta o total no carrinho
-const setTotal = (total) => document.querySelector('.total').innerHTML = total * 0.9 > 0 
-?
-`
+const setTotal = (total) => document.querySelector('.total').innerHTML = total * 0.9 > 0
+  ?
+  `
   <h2>Subtotal: <b>${formatarValorRS((total * 0.9))}</b> </h2>
 `
-: 
-`
+  :
+  `
   <h2>Subtotal: NENHUM ITEM ESCOLHIDO </h2>
 `
 
@@ -227,7 +292,7 @@ const setTotal = (total) => document.querySelector('.total').innerHTML = total *
 const getTotal = ({ valor, qtd }) => valor * qtd
 
 //ele seta no documento, o numero de produtos no carrinho
-const setNumeroProdutos = numero => document.querySelector('#cont-itens-carrinho').innerHTML =  numero > 0 ? numero :  ''
+const setNumeroProdutos = numero => document.querySelector('#cont-itens-carrinho').innerHTML = numero > 0 ? numero : ''
 
 //ele retorna o valor de produtos no carrinho com base no objeto passado como parametro
 const getNumeroProdutos = obj => Object.keys(obj).length
@@ -325,7 +390,7 @@ document.body.onload = () => {
 const getIdUser = () => {
   for (let i = 1; i < localStorage.getItem('id'); i++) {
     if (JSON.parse(localStorage.getItem(`conta${i}`)).e === localStorage.getItem('userLogado')) {
-      return i     
+      return i
     }
   }
 }
@@ -349,11 +414,11 @@ btnFinalizarCompras.addEventListener("click", function () {
 })
 
 const removerFromCart = id => {
-    let idUserLogado = getIdUser()
-    let cart = JSON.parse(localStorage.getItem(`conta${idUserLogado}`)).cart
-    delete cart[id]
-    document.querySelector(`.div${id}`).remove()
-    reajustarObjeto(cart)
-    setarValores(id)
+  let idUserLogado = getIdUser()
+  let cart = JSON.parse(localStorage.getItem(`conta${idUserLogado}`)).cart
+  delete cart[id]
+  document.querySelector(`.div${id}`).remove()
+  reajustarObjeto(cart)
+  setarValores(id)
 }
 
