@@ -1,5 +1,10 @@
 /* _______________________CODIGOS DO CADRASTO.CSS && LOGIN.CSS SÃO OS MESMOS___________ INICIO_______________________ */
 
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
 .login-medias-socials {
 
     display: flex;
@@ -7,7 +12,7 @@
 }
 
 .login-medias-socials a {
-    
+
     width: 40px;
     height: 40px;
     margin-left: 15px;
@@ -18,32 +23,87 @@
     align-items: center;
 }
 
+/**** login-register ****/
 
-/**** login-sign-in ****/
-
+.login-register,
 .login-sign-in {
+    width: 40%;
+    height: 70%;
+}
+
+.login-register section,
+.login-sign-in section {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.login-register {
     height: 34.2rem;
-    min-width: 400px;
     margin-bottom: 10px;
+    width: 40vw;
+    min-width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 50px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-width: medium;
-    border-style: solid;
-    background-color: var(--primary-color);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    box-shadow: 0px 0px 20px 0px #00000050;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://img.freepik.com/free-vector/sign-concept-illustration_114360-125.jpg?w=2000);
 }
 
-.login-sign-in h1 {
+.login-register section {
+    width: 100%;
+    height: 100%;
+    background-color: #00000090;
+
     display: flex;
     justify-content: center;
-    font-size: 2.5rem;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.login-register section button p {
     color: #fff;
-    margin-bottom: 30px;
+}
+
+.login-register h1 {
+    text-shadow: 1px 1px 3px #00000071;
+    margin-left: 50px;
+    font-size: 2.5rem;
+    color: var(--background-color);
+}
+
+.login-register h1 b,
+.login-register h3 b {
+    color: var(--important-color);
+}
+
+
+
+#registrar-pagina-login {
+    font-size: 20px;
+}
+
+#registrar-pagina-login p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+}
+
+#registrar-pagina-login p:hover {
+    color: rgb(255, 0, 0);
+    transition: 0.5s;
+    opacity: 0.7;
 
 }
+
 
 #register-btn {
     display: flex;
@@ -150,17 +210,7 @@ input:focus {
 
 }
 
-.login-sign-in>input {
-    color: var(--background-color);
-    background-color: var(--button-color);
-    border: none;
-    border-radius: 5px;
-    font-size: 1.5rem;
-    padding: 15px 25px;
-    margin-top: 20px;
-    letter-spacing: 0.2rem;
-    text-transform: uppercase;
-}
+
 
 .register>input:hover,
 .login-sign-in>input:hover {
@@ -168,14 +218,19 @@ input:focus {
     background-color: var(--important-color);
 }
 
+#cadastroID {
+    width: 70%;
+    margin: auto;
+}
+
 
 
 /* _______________________CODIGOS DO CADRASTO.CSS && LOGIN.CSS SÃO OS MESMOS_________________FIM_______________________ */
 
 @media all and (max-width: 768px) {
-    
+
     .login-sign-in,
-    .login-register{
+    .login-register {
 
         width: 100vw;
         height: 100vh;
@@ -184,4 +239,53 @@ input:focus {
         border-radius: 0px;
         border: none;
     }
+}
+
+
+@media (min-width: 360px) {
+    .login-sign-in h1 {
+        margin-top: -40px;
+    }
+
+    .btn-Cadastrar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -45px;
+
+
+    }
+
+    .login-sign-in section {
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+}
+
+@media (min-width: 320px) {
+    .login-sign-in h1 {
+        margin-top: -40px;
+    }
+
+    .btn-Cadastrar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -45px;
+
+
+    }
+
+    .login-sign-in section {
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+
 }

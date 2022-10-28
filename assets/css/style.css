@@ -32,6 +32,10 @@
 /* ========> STYLE MENU MOBILE <======== */
 @import url('./menu-mobile/mobile-tel.css');
 
+@import url('./components/login.css');
+@import url('./components/cadrasto.css');
+
+
 
 
 
@@ -839,101 +843,7 @@ header {
 }
 
 
-/***************************/
-/******  WINDOW LOGIN ******/
-/***************************/
 
-/**** O QUE IMPORTA (pro e-ecommerce)É A  PARTIR DAQUI****/
-
-.login-page {
-  width: 100%;
-  height: 100vh;
-  padding: 40px 0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--secundary-background);
-}
-
-/**** login-container ****/
-.login-container {
-  border-radius: 5px;
-  width: 100%;
-  height: 100vh;
-  padding: 20px;
-  margin: 45px auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  background-image: var();
-
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-/**** login-register ****/
-
-.login-register,
-.login-sign-in {
-  width: 40%;
-  height: 70%;
-  /* background-color: var(--background-color); */
-}
-
-.login-register section,
-.login-sign-in section {
-  width: 100%;
-  height: 70%;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.login-register {
-  height: 34.2rem;
-  margin-bottom: 10px;
-  width: 40vw;
-  min-width: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-bottom-left-radius: 10px;
-  border-top-left-radius: 10px;
-  box-shadow: 0px 0px 20px 0px #00000050;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: url(https://img.freepik.com/free-vector/sign-concept-illustration_114360-125.jpg?w=2000);
-}
-
-.login-register section {
-  width: 100%;
-  height: 100%;
-  background-color: #00000090;
-
-  display: flex;
-  justify-content: center;
-  border-bottom-left-radius: 10px;
-  border-top-left-radius: 10px;
-}
-
-.login-register section button p {
-  color: #fff;
-}
-
-.login-register h1 {
-  text-shadow: 1px 1px 3px #00000071;
-  margin-left: 50px;
-  font-size: 2.5rem;
-  color: var(--background-color);
-}
-
-.login-register h1 b,
-.login-register h3 b {
-  color: var(--important-color);
-}
 
 .register {
   color: var(--background-color);
@@ -1058,13 +968,6 @@ header {
 
   .payments div ul {
     display: none;
-  }
-
-  footer {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    justify-content: flex-start;
-    padding: 10px;
   }
 }
 
@@ -1413,6 +1316,22 @@ header {
   .see-all {
     width: 87%;
   }
+
+  footer .menu-footer {
+    align-items: center;
+  }
+
+  footer .menu-footer>div {
+    flex: 1;
+    min-width: 45%;
+    gap: 5%;
+  }
+
+  footer .menu-footer>div:nth-child(1) {
+    min-width: 100%;
+    margin-bottom: 30px;
+  }
+
 }
 
 @media (max-width: 500px) {
@@ -1437,10 +1356,20 @@ header {
   }
 
   /******* FOOTER ******/
+  footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
   footer .menu-footer {
     justify-content: center;
     align-items: center;
+    width: 70%;
+    margin: auto;
+  }
+
+  footer .menu-footer>div {
+    max-width: 200px;
   }
 
   .media {
@@ -1451,17 +1380,21 @@ header {
     padding: 0px;
   }
 
+
+
   .shop,
   .links,
-  .contact {
+  .contact,
+  .blog {
     width: 25%;
     height: 300px;
   }
 
   .shop a,
   .links a,
-  .contact a {
-    font-size: 0.8rem;
+  .contact a,
+  .blog a {
+    font-size: 1rem;
   }
 }
 
@@ -1551,7 +1484,6 @@ header {
   }
 
   .pay-contact section {
-
     text-align: center;
   }
 }

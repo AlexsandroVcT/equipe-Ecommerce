@@ -9,7 +9,7 @@
     <!------ LINK CSS STYLE ------->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- LINK CSS REGISTRAR -->
-    <link rel="stylesheet" href="assets/css/cadrasto.css">
+    <!-- <link rel="stylesheet" href="assets/css/cadrasto.css"> -->
     <!------ LINK FONTAWESOME ------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
@@ -58,7 +58,8 @@
 
                         </div>
 
-                        <button class="btn-all" onclick="location.href = 'login-page.html'" style="margin-top: 30px; margin-left: 50px;">
+                        <button class="btn-all" onclick="location.href = 'login-page.html'"
+                            style="margin-top: 30px; margin-left: 50px;">
                             <p>Logar</p>
                         </button>
 
@@ -72,13 +73,17 @@
             <form class="login-sign-in" id="chenge-theme">
 
                 <section>
-                    <h1>Cadastro</h1>
+                    <div id="cadastroID">
+                        <h1>Cadastro</h1>
 
-                    <div class="sign-in">
-                        <input id="email" type="email" name="email" class="email" placeholder="E-mail" required>
-                        <input id="senha" type="password" name="password" class="password" placeholder="Senha" required>
-                        <input id="rSenha" type="password" name="password" class="password" placeholder="Repetir Senha"
-                            required>
+
+                        <div class="sign-in">
+                            <input id="email" type="email" name="email" class="email" placeholder="E-mail" required>
+                            <input id="senha" type="password" name="password" class="password" placeholder="Senha"
+                                required>
+                            <input id="rSenha" type="password" name="password" class="password"
+                                placeholder="Repetir Senha" required>
+                        </div>
                     </div>
 
                     <div class="btn-Cadastrar">
